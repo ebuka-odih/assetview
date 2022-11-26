@@ -25,8 +25,6 @@
 <body class="">
 
 
-
-
 <header class="Top Container">
     <a href="index.html" class="Logo">Assets Cryptoview</a>
     <input id="mobmenu-toggle" type="checkbox">
@@ -62,9 +60,11 @@
             <li class="Nav__item">
                 <span class="Nav__link Nav__link--dropdown">Research</span>
                 <ul class="Nav__dropdown-menu Nav-Dropdown">
-                    <li class="Nav-Dropdown__item"><a class="Nav-Dropdown__link"
+                    <li class="Nav-Dropdown__item">
+                        <a class="Nav-Dropdown__link"
                                                       target="_blank"
-                                                      href="https://staking.staked.us/state-of-staking">State of Staking</a></li>
+                                                      href="https://staking.staked.us/state-of-staking">State of Staking</a>
+                    </li>
                 </ul>
             </li>
 
@@ -74,20 +74,18 @@
             <li class="Nav__pipe"></li>
             <li class="Nav__item">
 
-                <a class="Nav__link Nav__link--auth" href="v/login/index.html">Login</a>
+                <a class="Nav__link Nav__link--auth" href="{{ route('login') }}">Login</a>
 
             </li>
             <li class="Nav__item">
 
 
-                <a href=v/register/index.html  class="Btn Btn--indigo Btn--invert  Nav__create-account" title="Create Account">Create Account</a>
+                <a href="{{ route('register') }}"  class="Btn Btn--indigo Btn--invert  Nav__create-account" title="Create Account">Create Account</a>
 
             </li>
         </ul>
     </nav>
 </header>
-
-
 
 
 @yield('content')

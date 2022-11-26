@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::view('/', 'pages.index');
+Route::view('/', 'pages.index')->name('index');
 
 Auth::routes();
 

@@ -22,7 +22,7 @@
     <!-- Stylesheets -->
     <!-- Fonts and Dashmix framework -->
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" id="css-main" href="{{ asset('assets/css/dashmix.min.css') }}">
+    <link rel="stylesheet" id="css-main" href="{{ asset('admin/assets/css/dashmix.min.css') }}">
 
     <!-- You can include a specific file from css/themes/ folder to alter the default color theme of the template. eg: -->
     <!-- <link rel="stylesheet" id="css-theme" href="assets/css/themes/xwork.min.css"> -->
@@ -341,12 +341,12 @@
 <!-- END Page Container -->
 
 
-<script src="{{ asset('assets/js/dashmix.app.min.js') }}"></script>
+<script src="{{ asset('admin/assets/js/dashmix.app.min.js') }}"></script>
 
 <!-- Page JS Plugins -->
-<script src="{{ asset('assets/js/plugins/chart.js/chart.min.js') }}"></script>
+<script src="{{ asset('admin/assets/js/plugins/chart.js/chart.min.js') }}"></script>
 
 <!-- Page JS Code -->
-<script src="{{ asset('assets/js/pages/be_pages_dashboard.min.js') }}"></script>
+<script src="{{ asset('admin/assets/js/pages/be_pages_dashboard.min.js') }}"></script>
 </body>
 </html>

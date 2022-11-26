@@ -1386,7 +1386,6 @@
     </div>
 </section>
 
-
 <section class="FAQ Container">
     <h2 class="FAQ__header Header">Frequently Asked Questions</h2>
     <div class="Accordion js-accordion">
