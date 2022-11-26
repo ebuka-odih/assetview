@@ -4,9 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Route::view('/', 'pages.index');
 
 Auth::routes();
 
@@ -16,6 +14,7 @@ include 'admin.php';
 
 Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 'user.'], function () {
     Route::get('dashboard', "UserController@dashboard")->name('dashboard');
+
 
 });
 
