@@ -81,28 +81,28 @@
     <div class="CTAs__item Card Card--w-header Card--indigo">
         <div class="Card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="light" opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.5h35l10 12.5h-55l10-12.5z"/><path class="dark" fill-rule="evenodd" clip-rule="evenodd" d="M57.5 20L30 50 2.5 20h55z"/></svg></div>
         <div class="Card__body">
-            <h3 class="Card__header Header"><span class="larger">Crypto & Venture Funds</span></h3>
-            <p class="Card__text">The Staking Partner of Choice for Institutional Crypto</p>
+            <h3 class="Card__header Header"><span class="larger">Crypto Staking & Crypto Hold</span></h3>
+            <p class="Card__text">The Staking Partner of Choice for Institutional Crypto and Crypto Holders</p>
         </div>
-        <a href=https://staking.staked.us/  class="Btn Btn--indigo Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
+        <a href="{{ route('register') }}"  class="Btn Btn--indigo Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
     </div>
 
     <div class="CTAs__item Card Card--w-header Card--ecstasy">
         <div class="Card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><rect opacity=".3" x="17.5" y="17.5" width="5" height="30" rx="1" transform="rotate(-90 17.5 17.5)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M24.268 20.732a2.5 2.5 0 01-3.536 3.536l-7.5-7.5a2.5 2.5 0 010-3.536l7.5-7.5a2.5 2.5 0 013.536 3.536L18.535 15l5.733 5.732z"/><rect opacity=".3" width="5" height="30" rx="1" transform="matrix(0 -1 -1 0 42.5 47.5)"/><path fill-rule="evenodd" clip-rule="evenodd" d="M35.732 50.732a2.5 2.5 0 003.536 3.536l7.5-7.5a2.5 2.5 0 000-3.536l-7.5-7.5a2.5 2.5 0 00-3.536 3.536L41.465 45l-5.733 5.732z"/></svg></div>
         <div class="Card__body">
-            <h3 class="Card__header Header"><span class="larger">Exchanges & Custodians</span></h3>
-            <p class="Card__text">Infrastructure to Power Staking</p>
+            <h3 class="Card__header Header"><span class="larger">Crypto Mining</span></h3>
+            <p class="Card__text">Infrastructure to Power Crypto Assets Mining</p>
         </div>
-        <a href=https://staking.staked.us/partners  class="Btn Btn--ecstasy Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
+        <a href="{{ route('register') }}"  class="Btn Btn--ecstasy Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
     </div>
 
     <div class="CTAs__item Card Card--w-header Card--pine">
         <div class="Card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="light" opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.5h35l10 12.5h-55l10-12.5z"/><path class="dark" fill-rule="evenodd" clip-rule="evenodd" d="M57.5 20L30 50 2.5 20h55z"/></svg></div>
         <div class="Card__body">
-            <h3 class="Card__header Header"><span class="larger">Traditional Investors & Asset Allocators</span></h3>
-            <p class="Card__text">A familiar structure for ETH exposure plus a staking yield</p>
+            <h3 class="Card__header Header"><span class="larger">Automated Crypto Trading</span></h3>
+            <p class="Card__text">A familiar structure for crypto bots and crypto automated Infrastructure</p>
         </div>
-        <a href=https://staking.staked.us/eth-trust/ target=_blank class="Btn Btn--pine Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
+        <a href="{{ route('register') }}" class="Btn Btn--pine Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
     </div>
 </section>
 
@@ -286,7 +286,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/ethereum-staking-options"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -313,7 +313,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/terra-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -340,7 +340,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/cardano-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -367,7 +367,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/matic-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -394,7 +394,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/polkadot-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -421,7 +421,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/solana-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -448,7 +448,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/cosmos-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -475,7 +475,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/near-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -502,7 +502,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/flow-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -529,7 +529,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/elrond-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -556,7 +556,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/graph-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -583,7 +583,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/mina-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -610,7 +610,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/dash-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -637,7 +637,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/kava-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -664,7 +664,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/kusama-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -691,7 +691,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/helium-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -718,7 +718,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/decred-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -745,7 +745,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/stacks-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -772,7 +772,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/oasis-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -799,7 +799,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/audius-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -826,7 +826,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/secret-network-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -853,7 +853,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/skale-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -880,7 +880,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/iris-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -907,7 +907,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/injective-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -934,7 +934,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/orbs-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -961,7 +961,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/livepeer-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -988,7 +988,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/provenance-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1019,7 +1019,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/moonbeam-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1046,7 +1046,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/moonriver-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1073,7 +1073,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/sui-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1100,7 +1100,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/abacus-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1127,7 +1127,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/osmosis-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1154,7 +1154,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/fantom-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1181,7 +1181,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/avalanche-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1208,7 +1208,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/radix-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1235,7 +1235,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/pocket-network-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1262,7 +1262,7 @@
 
 
             <a class="Assets__item Asset Asset--"
-               href="https://staking.staked.us/evmos-staking"
+               href="{{ route('login') }}"
 
                target="_blank"
 
@@ -1298,7 +1298,7 @@
         <h2 class="Eth2Status__header Header"><b>Crypto’s Trusted Partner of Choice for ETH2 Staking</b></h2>
         <p>Staked’s robust suite of ETH2 infrastructure and tooling make it easy for large ETH holders, institutional investors, custodians and exchanges to participate in ETH2 staking.</p>
 
-        <a href=v/eth2/stake.html  class="Btn Btn--indigo Btn--invert  Btn--expanded Eth2Status__cta" title="Stake Now">Stake Now</a>
+        <a href="{{ route('login') }}"  class="Btn Btn--indigo Btn--invert  Btn--expanded Eth2Status__cta" title="Stake Now">Stake Now</a>
     </div>
 
     <div class="Eth2Status__wrapper">

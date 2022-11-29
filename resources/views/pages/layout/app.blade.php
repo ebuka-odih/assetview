@@ -12,14 +12,14 @@
     <link rel="manifest" href="https://storage.googleapis.com/static-webapp-220401-prod/static/i/fav/site.d7bca03eb860.webmanifest?v=gAa6AEel3x">
     <link rel="mask-icon" href="https://storage.googleapis.com/static-webapp-220401-prod/static/i/fav/safari-pinned-tab.419415add3f1.svg?v=gAa6AEel3x" color="#102039">
     <link rel="shortcut icon" href="https://storage.googleapis.com/static-webapp-220401-prod/static/i/fav/favicon.c554d9eff063.ico?v=gAa6AEel3x">
-    <meta name="apple-mobile-web-app-title" content="Staked">
-    <meta name="application-name" content="Staked">
+    <meta name="apple-mobile-web-app-title" content="Assets Cryptoview">
+    <meta name="application-name" content="Assets Cryptoview">
     <meta name="msapplication-TileColor" content="#f3f9ff">
     <meta name="msapplication-config" content="https://storage.googleapis.com/static-webapp-220401-prod/static/i/fav/browserconfig.e65075b0e7e5.xml?v=gAa6AEel3x">
     <meta name="theme-color" content="#ffffff">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,600&amp;display=swap" rel="stylesheet">
-    <title>Staked - Compound Your Crypto</title>
-    <meta name="description" content="Staked helps investors compound their cryptocurrency investments by participating in staking or lending.">
+    <title>Assets Cryptoview - Compound Your Crypto</title>
+    <meta name="description" content="Assets Cryptoview helps investors compound their cryptocurrency investments by participating in staking or lending.">
 </head>
 
 <body class="">
@@ -115,7 +115,7 @@
 
 <footer class="Footer Container">
     <div class="Footer__menu">
-        <div class="Footer__logo">Staked</div>
+        <div class="Footer__logo">Assets Cryptoview</div>
 
         <div class="Footer__resources">
             <h4 class="Footer__subheader">Resources</h4>
@@ -172,7 +172,7 @@
             <a href=v/register/index.html  class="Btn Btn--indigo Btn--invert  " title="Create Account">Create Account</a>
         </div>
         <div class="Footer__footer">
-            <div class="Footer__copyright">2022 &copy; Staked</div>
+            <div class="Footer__copyright">2022 &copy; Assets Cryptoview</div>
             <div class="Footer__social">
                 <a title="Events" href="https://staking.staked.us/events" target="_blank"><svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" fill="#fff"><path d="M63.978 14.167V7.638c0-1.791 1.473-3.265 3.264-3.265s3.265 1.474 3.265 3.265v6.529h6.528c5.373 0 9.794 4.421 9.794 9.793v52.231c0 5.372-4.421 9.793-9.794 9.793h-52.23c-5.373 0-9.794-4.421-9.794-9.793V23.96c0-5.372 4.421-9.793 9.794-9.793h6.528V7.638c0-1.791 1.474-3.265 3.265-3.265s3.264 1.474 3.264 3.265v6.529zM80.3 38.65H21.54v37.541a3.28 3.28 0 003.265 3.264h52.23a3.28 3.28 0 003.265-3.264zM50.92 70.213h-.003c-2.095 0-3.82-1.725-3.82-3.82 0-1.009.4-1.978 1.111-2.693a3.97 3.97 0 015.405 0 3.821 3.821 0 011.127 2.693 3.838 3.838 0 01-3.82 3.82zm16.322-.003a3.833 3.833 0 01-3.798-3.814c0-1.007.399-1.975 1.109-2.689a3.832 3.832 0 015.378 0 3.816 3.816 0 011.109 2.689 3.833 3.833 0 01-3.798 3.814zm-32.644-.003a3.83 3.83 0 01-3.795-3.811c0-1.007.399-1.973 1.108-2.687 1.477-1.467 3.897-1.467 5.373 0a3.811 3.811 0 011.109 2.687 3.83 3.83 0 01-3.795 3.811zm32.645-14.686c-2.094 0-3.817-1.724-3.817-3.818a3.818 3.818 0 011.107-2.691 3.948 3.948 0 015.401 0 3.817 3.817 0 011.11 2.691 3.836 3.836 0 01-3.801 3.818zm-32.644-.006h-.003a3.83 3.83 0 01-3.812-3.812c0-1.006.399-1.973 1.109-2.687a3.943 3.943 0 015.394 0 3.816 3.816 0 011.108 2.687 3.83 3.83 0 01-3.796 3.812zm16.322-.015h-.003a3.815 3.815 0 01-3.796-3.796c0-1.003.397-1.966 1.104-2.677a3.928 3.928 0 015.372 0 3.797 3.797 0 011.104 2.677c0 2.076-1.704 3.787-3.781 3.796zm19.586-34.804v1.632c0 1.791-1.474 3.264-3.265 3.264s-3.264-1.473-3.264-3.264v-1.632H37.862v1.632c0 1.791-1.473 3.264-3.264 3.264s-3.265-1.473-3.265-3.264v-1.632h-6.528a3.28 3.28 0 00-3.265 3.264v8.161H80.3V23.96a3.28 3.28 0 00-3.265-3.264z"/></svg> Events</a>
                 <a title="Blog" href="https://blog.staked.us/blog" target="_blank"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none"><path d="M12.125 15C8.231 15 5 18.231 5 22.125v55.75C5 81.769 8.231 85 12.125 85h55.75C71.769 85 75 81.769 75 77.875V60.281l19.125-19.093a3 3 0 000-4.25l-9.063-9.063A3 3 0 0082.906 27a3 3 0 00-2.094.875L75 33.688V22.124C75 18.231 71.769 15 67.875 15h-55.75zm0 6h55.75c.681 0 1.125.444 1.125 1.125v17.594L51.875 56.875A3 3 0 0051 59v9a3 3 0 003 3h9a3 3 0 002.125-.875L69 66.25v11.625c0 .681-.444 1.125-1.125 1.125h-55.75C11.444 79 11 78.556 11 77.875v-55.75c0-.681.444-1.125 1.125-1.125zm7.563 8A3.004 3.004 0 1020 35h40a3 3 0 100-6H20a3 3 0 00-.313 0zm63.25 5.25l4.812 4.813-3.219 3.218-4.812-4.812 3.219-3.219zM19.688 41A3.004 3.004 0 1020 47h35a3 3 0 100-6H20a3 3 0 00-.313 0zm55.78.719l4.813 4.812L61.75 65H57v-4.75l18.469-18.531zM19.689 53A3.004 3.004 0 1020 59h24a3 3 0 100-6H20a3 3 0 00-.313 0zm0 12A3.004 3.004 0 1020 71h24a3 3 0 100-6H20a3 3 0 00-.313 0z" fill="#F3F9FF"/></svg> Blog</a>
