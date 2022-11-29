@@ -26,9 +26,9 @@ class Deposits extends Model
     public function status()
     {
         if ($this->status == 0){
-            return "<span class='badge badge-warning text text-uppercase'>Pending</span>";
+            return "<span class='badge bg-warning text text-uppercase'>Pending</span>";
         }elseif ($this->status > 0){
-            return "<span class='badge badge-success text text-uppercase'>Successful</span>";
+            return "<span class='badge bg-success text text-uppercase'>Successful</span>";
         }else{
             return "<span class='badge badge-danger text text-uppercase'>Cancelled</span>";
         }
@@ -43,4 +43,11 @@ class Deposits extends Model
             return "<span class='badge bg-danger text text-uppercase'>Cancelled</span>";
         }
     }
+
+    public function roi()
+    {
+      return ($this->crypto_asset->interest * $this->crypto_asset->amount) / 100;
+    }
+
+
 }

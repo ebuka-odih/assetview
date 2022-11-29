@@ -97,7 +97,7 @@
                     <li class="menu-title" key="t-menu">Menu</li>
 
                     <li>
-                        <a href="javascript: void(0);" class="waves-effect">
+                        <a href="{{ route('user.dashboard') }}" class="waves-effect">
                             <i class="bx bx-home-circle"></i>
                             <span key="t-dashboards">Dashboards</span>
                         </a>
@@ -113,7 +113,7 @@
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="crypto-wallet.html" key="t-wallet">Wallet</a></li>
                             <li><a href="{{ route('user.assets') }}" key="">Hold</a></li>
-                            <li><a href="crypto-exchange.html" key="t-exchange">Exchange</a></li>
+                            <li><a href="{{ route('user.assets.history') }}" key="t-exchange">Transactions</a></li>
 
                         </ul>
                     </li>

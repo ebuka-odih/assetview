@@ -22,13 +22,12 @@
                         @foreach($assets as $item)
                         <div class="col-sm-3">
                             <div class="card">
-                                <a href="">
+                                <a href="{{ route('user.payment', $item->id) }}">
                                     <div class="card-body">
                                         <h3 class="text-muted mb-4">
-                                            <img style="border-radius: 50%; height: 40px; width: 40px" src="{{ asset('proof/'.$item->icon ) }}" alt="">
+                                            <img style="border-radius: 50%; height: 40px; width: 40px" src="{{ asset('crypto/'.$item->icon ) }}" alt="">
                                             {{ $item->name }}
                                         </h3>
-
 
                                         <div class="row">
                                             <div class="col-12">
