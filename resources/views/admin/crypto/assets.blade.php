@@ -23,7 +23,7 @@
 
                         <div class="col-lg-12 ">
                             <!-- Form Inline - Default Style -->
-                            <form class="g-3 align-items-center" action="{{ route('admin.assets.store') }}" method="POST" enctype="multipart/form-data">
+                            <form class="g-3 align-items-center" action="{{ route('admin.asset.store') }}" method="POST" enctype="multipart/form-data">
                                 @csrf
                                 <div class="container">
                                     @if(session()->has('success'))
@@ -42,11 +42,15 @@
                                     @endif
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-4">
                                         <label  >Asset Name</label>
                                         <input type="text" class="form-control"  name="name" >
                                     </div>
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-4">
+                                        <label  >Asset Interest</label>
+                                        <input type="text" class="form-control"  name="interest" >
+                                    </div>
+                                    <div class="col-lg-4">
                                         <label  for="example-if-password">Icon</label>
                                         <input type="file" class="form-control form-control-file" id="example-if-password" name="icon">
                                     </div>
@@ -98,6 +102,7 @@
                                 <th>Asset Name</th>
                                 <th >Icon</th>
                                 <th>Amount</th>
+                                <th>Interest</th>
                                 <th>Value</th>
                                 <th class="text-center" >Actions</th>
                             </tr>
@@ -109,9 +114,10 @@
                                         {{ $item->name }}
                                     </td>
                                     <td class="fw-semibold">
-                                        <img style="height: 50px; width: 50px" src="{{ asset('proof/'.$item->icon) }}" alt="">
+                                        <img style="height: 50px; width: 50px" src="{{ asset('crypto/'.$item->icon) }}" alt="">
                                     </td>
                                     <td>${{ $item->amount }}</td>
+                                    <td>{{ $item->interest }}</td>
                                     <td>{{ $item->value }}</td>
                                     <td class="text-center">
                                         <div class="btn-group">
@@ -119,7 +125,7 @@
                                                 <i class="fa fa-pencil-alt"></i>
                                             </button>
 
-                                            <form method="POST" action="{!! route('admin.assets.destroy', $item->id) !!}" accept-charset="UTF-8">
+                                            <form method="POST" action="{!! route('admin.asset.destroy', $item->id) !!}" accept-charset="UTF-8">
                                                 <input name="_method" value="DELETE" type="hidden">
                                                 {{ csrf_field() }}
                                                 <div class="btn-group btn-group-xs pull-right" role="group">

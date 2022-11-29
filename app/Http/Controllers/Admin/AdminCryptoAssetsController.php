@@ -27,19 +27,21 @@ class AdminCryptoAssetsController extends Controller
             'name' => 'required',
             'value' => 'required',
             'amount' => 'required',
+            'interest' => 'required',
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:7048',
         ]);
 
         if ($request->hasFile('icon')) {
             $image = $request->file('icon');
             $input['imagename'] = time() . '.' . $image->getClientOriginalExtension();
-            $destinationPath = public_path('/proof');
+            $destinationPath = public_path('/crypto');
             $image->move($destinationPath, $input['imagename']);
 
             $asset = new CryptoAssets();
             $asset->name = $request->name;
             $asset->value = $request->value;
             $asset->amount = $request->amount;
+            $asset->interest = $request->interest;
             $asset->icon = $input['imagename'];
             $asset->save();
             return redirect()->back()->with('success', 'Created Successfully');
@@ -48,6 +50,7 @@ class AdminCryptoAssetsController extends Controller
         $asset->name = $request->name;
         $asset->value = $request->value;
         $asset->amount = $request->amount;
+        $asset->interest = $request->interest;
         $asset->save();
         return redirect()->back()->with('success', 'Created Successfully');
     }
