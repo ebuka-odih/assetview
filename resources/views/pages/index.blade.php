@@ -100,7 +100,7 @@
         <div class="Card__icon"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 60 60"><path class="light" opacity=".3" fill-rule="evenodd" clip-rule="evenodd" d="M12.5 7.5h35l10 12.5h-55l10-12.5z"/><path class="dark" fill-rule="evenodd" clip-rule="evenodd" d="M57.5 20L30 50 2.5 20h55z"/></svg></div>
         <div class="Card__body">
             <h3 class="Card__header Header"><span class="larger">Automated Crypto Trading</span></h3>
-            <p class="Card__text">A familiar structure for crypto bots and crypto automated Infrastructure</p>
+            <p class="Card__text">A reliable structure for crypto algorithm and crypto automated Infrastructure</p>
         </div>
         <a href="{{ route('register') }}" class="Btn Btn--pine Btn--invert Btn--arrowed CTAs__button" title="Get Started">Get Started<div class="Btn__arr"><svg><use xlink:href="sprites.svg#chevron_horizontal"></use></svg></div></a>
     </div>

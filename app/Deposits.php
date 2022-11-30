@@ -49,5 +49,14 @@ class Deposits extends Model
       return ($this->crypto_asset->interest * $this->crypto_asset->amount) / 100;
     }
 
+    public function totalROI()
+    {
+        $total_roi = 0;
+        $deposit = Deposits::all();
+        while ($deposit > 0){
+           $deposit->amount += $total_roi;
+        }
+    }
+
 
 }

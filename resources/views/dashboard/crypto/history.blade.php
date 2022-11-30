@@ -11,7 +11,7 @@
                 <div class="col-xl-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title mb-4">My Assets</h4>
+                            <h4 class="card-title mb-4">My Deposits</h4>
 
                             <div class="table-responsive">
                                 <table class="table table-nowrap align-middle mb-0">
@@ -88,7 +88,11 @@
                                                  </td>
 
                                                 <td style="width: 120px;">
+                                                    @if($item->status == 1)
                                                     <a href="javascript: void(0);" class="btn btn-primary btn-sm w-xs">View</a>
+                                                    @else
+                                                    <a href="{{ route('user.payment', $item->id) }}" class="btn btn-primary btn-sm w-xs">View</a>
+                                                    @endif
                                                 </td>
                                             </tr>
                                         @endif

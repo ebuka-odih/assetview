@@ -19,6 +19,14 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('crypto-hold/payment/3536{id}2', "CryptoAssetsController@payment")->name('payment');
     Route::post('crypto-hold/process/payment', "CryptoAssetsController@processPayment")->name('processPayment');
     Route::get('success/3536{id}2', "CryptoAssetsController@success")->name('assets.success');
-    Route::get('assets/transactions', "CryptoAssetsController@history")->name('assets.history');
+
+    Route::get('assets/wallet', "DepositsController@wallet")->name('wallet');
+    Route::get('assets/transactions', "DepositsController@history")->name('assets.history');
+
+    Route::get('withdrawal', "WithdrawController@withdraw")->name('withdraw');
+    Route::post('process/withdrawal', "WithdrawController@processWithdraw")->name('processWithdraw');
+    Route::get('withdrawal/otp/{id}', "WithdrawController@otpcode")->name('otpcode');
+    Route::post('process/withdrawal/otp/', "WithdrawController@process_otp")->name('process_otp');
+    Route::resource('account', "WithdrawMethodController");
 });
 

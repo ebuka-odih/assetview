@@ -60,7 +60,7 @@
                 <div class="dropdown d-inline-block">
                     <button type="button" class="btn header-item waves-effect" id="page-header-user-dropdown"
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        <img class="rounded-circle header-profile-user" src="{{ asset('assets/images/users/avatar-1.jpg') }}"
+                        <img class="rounded-circle header-profile-user" src="https://www.pngitem.com/pimgs/m/421-4213036_avatar-hd-png-download.png"
                              alt="Header Avatar">
                         <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
@@ -111,10 +111,20 @@
                             <span key="t-crypto">Crypto Hold</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="crypto-wallet.html" key="t-wallet">Wallet</a></li>
+                            <li><a href="{{ route('user.wallet') }}" key="t-wallet">Wallet</a></li>
                             <li><a href="{{ route('user.assets') }}" key="">Hold</a></li>
                             <li><a href="{{ route('user.assets.history') }}" key="t-exchange">Transactions</a></li>
-
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow waves-effect">
+                            <i class="bx bx-up-arrow-alt"></i>
+                            <span key="t-crypto">Withdrawal</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="{{ route('user.withdraw') }}" key="t-wallet">Withdraw</a></li>
+                            <li><a href="{{ route('user.assets.history') }}" key="t-exchange">History</a></li>
+                            <li><a href="{{ route('user.account.index') }}" key="t-exchange">Account</a></li>
                         </ul>
                     </li>
 
@@ -137,6 +147,13 @@
                                 </ul>
                             </li>
                         </ul>
+                    </li>
+
+                    <li>
+                        <a href="{{ route('user.dashboard') }}" class="waves-effect">
+                            <i class="bx bx-wrench"></i>
+                            <span key="t-dashboards">Settings</span>
+                        </a>
                     </li>
 
 

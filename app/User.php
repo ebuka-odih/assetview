@@ -54,4 +54,9 @@ class User extends Authenticatable
     {
         return $this->hasMany(Deposits::class, 'user_id');
     }
+
+    public function userId()
+    {
+        return "SK0234".$this->id;
+    }
 }
