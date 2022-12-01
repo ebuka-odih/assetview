@@ -20,13 +20,14 @@
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:700,400,600&amp;display=swap" rel="stylesheet">
     <title>Assets Cryptoview - Compound Your Crypto</title>
     <meta name="description" content="Assets Cryptoview helps investors compound their cryptocurrency investments by participating in staking or lending.">
+
 </head>
 
 <body class="">
 
 
 <header class="Top Container">
-    <a href="index.html" class="Logo">Assets Cryptoview</a>
+    <a href="{{ route('index') }}" class="Logo">Assets Cryptoview</a>
     <input id="mobmenu-toggle" type="checkbox">
     <label for="mobmenu-toggle" class="Nav-Ham">
         <span class="Nav-Ham__lines"></span>
@@ -116,7 +117,7 @@
 <footer class="Footer Container">
     <div class="Footer__menu">
         <div class="Footer__logo">Assets Cryptoview</div>
-        
+
         <div class="Footer__corporate">
             <h4 class="Footer__subheader">Corporate</h4>
             <ul>

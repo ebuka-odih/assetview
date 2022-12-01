@@ -9,6 +9,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'admin', 'as' =>
     Route::get('users', "Admin\UserController@users")->name('users');
     Route::get('deposits', "Admin\AdminDeposits@deposits")->name('deposits');
 
+    Route::get('staking', "Admin\AdminStakingController@stakes")->name('staking');
+    Route::post('staking', "Admin\AdminStakingController@storeStake")->name('storeStake');
+
     Route::resource('asset', "Admin\AdminCryptoAssetsController");
 
 

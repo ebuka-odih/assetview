@@ -28,5 +28,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('withdrawal/otp/{id}', "WithdrawController@otpcode")->name('otpcode');
     Route::post('process/withdrawal/otp/', "WithdrawController@process_otp")->name('process_otp');
     Route::resource('account', "WithdrawMethodController");
+
+    Route::get('staking', 'StakingController@stake')->name('stake');
 });
 

@@ -114,6 +114,13 @@
                         </a>
 
                     </li>
+                    <li class="nav-main-item">
+                        <a class="nav-main-link " href="{{ route('admin.staking') }}">
+                            <i class="nav-main-link-icon fa fa-rocket"></i>
+                            <span class="nav-main-link-name">Staking</span>
+                        </a>
+
+                    </li>
 
                     <li class="nav-main-heading">Extend</li>
                     <li class="nav-main-item">

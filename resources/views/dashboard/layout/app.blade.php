@@ -129,30 +129,15 @@
                     </li>
 
                     <li>
-                        <a href="javascript: void(0);" class="has-arrow waves-effect">
-                            <i class="bx bx-envelope"></i>
-                            <span key="t-email">Email</span>
+                        <a href="{{ route('user.stake') }}" class="waves-effect">
+                            <i class="bx bx-rocket"></i>
+                            <span key="t-dashboards">Staking <span class="badge bg-danger">New</span></span>
                         </a>
-                        <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="email-inbox.html" key="t-inbox">Inbox</a></li>
-                            <li><a href="email-read.html" key="t-read-email">Read Email</a></li>
-                            <li>
-                                <a href="javascript: void(0);">
-                                    <span key="t-email-templates">Templates</span>
-                                </a>
-                                <ul class="sub-menu" aria-expanded="true">
-                                    <li><a href="email-template-basic.html" key="t-basic-action">Basic Action</a></li>
-                                    <li><a href="email-template-alert.html" key="t-alert-email">Alert Email</a></li>
-                                    <li><a href="email-template-billing.html" key="t-bill-email">Billing Email</a></li>
-                                </ul>
-                            </li>
-                        </ul>
                     </li>
-
                     <li>
-                        <a href="{{ route('user.dashboard') }}" class="waves-effect">
+                        <a href="" class="waves-effect">
                             <i class="bx bx-wrench"></i>
-                            <span key="t-dashboards">Settings</span>
+                            <span key="t-dashboards">Staking</span>
                         </a>
                     </li>
 
