@@ -21,7 +21,7 @@
 
                                     <div class="mt-4">
                                         <a href="#" class="btn btn-primary" id="connectButton">
-                                           Connect
+                                           Connect Wallet
                                         </a>
                                     </div>
                                     <div  class="mt-4 ">

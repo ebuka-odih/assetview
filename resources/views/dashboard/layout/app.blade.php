@@ -135,6 +135,12 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{ route('user.stake') }}" class="waves-effect">
+                            <i class="bx bx-box"></i>
+                            <span key="t-dashboards">Mining <span class="badge bg-danger">New</span></span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="" class="waves-effect">
                             <i class="bx bx-wrench"></i>
                             <span key="t-dashboards">Staking</span>
