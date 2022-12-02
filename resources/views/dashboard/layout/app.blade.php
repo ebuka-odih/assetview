@@ -141,9 +141,15 @@
                         </a>
                     </li>
                     <li>
+                        <a href="{{ route('user.stake') }}" class="waves-effect">
+                            <i class="bx bx-chart"></i>
+                            <span key="t-dashboards">Automated Trader <span class="badge bg-danger">New</span></span>
+                        </a>
+                    </li>
+                    <li>
                         <a href="" class="waves-effect">
                             <i class="bx bx-wrench"></i>
-                            <span key="t-dashboards">Staking</span>
+                            <span key="t-dashboards">Settings</span>
                         </a>
                     </li>
 
