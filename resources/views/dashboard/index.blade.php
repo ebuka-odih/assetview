@@ -29,7 +29,7 @@
                                 <div class="col-sm-6">
                                     <div>
                                         <p class="fw-medium mb-2">Balance :</p>
-                                        <h4>$ 6134.39</h4>
+                                        <h4>$ {{ auth()->user()->balance ? : "0.00" }}</h4>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -39,9 +39,9 @@
 
                                             <a href="javascript: void(0);" class="m-1">
                                                 <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18">
-                                                                    <i class="mdi mdi-bitcoin"></i>
-                                                                </span>
+                                                    <span class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18">
+                                                        <i class="mdi mdi-bitcoin"></i>
+                                                    </span>
                                                 </div>
                                             </a>
                                             <a href="javascript: void(0);" class="m-1">
@@ -66,8 +66,7 @@
 
                         <div class="card-footer bg-transparent border-top">
                             <div class="text-center">
-                                <a href="javascript: void(0);" class="btn btn-outline-light me-2 w-md">Deposit</a>
-                                <a href="javascript: void(0);" class="btn btn-primary me-2 w-md">Buy / Sell</a>
+                                <a href="{{ route('user.assets') }}" class="btn btn-primary me-2 w-md">HOLD</a>
                             </div>
                         </div>
                     </div>
