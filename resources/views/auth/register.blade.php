@@ -50,7 +50,7 @@
                             </a>
                         </div>
                         <div class="p-2">
-                            <form class="needs-validation" novalidate action="{{ route('login') }}">
+                            <form class="needs-validation" method="POST" action="{{ route('login') }}">
                                 @csrf
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
