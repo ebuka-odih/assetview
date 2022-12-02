@@ -16,6 +16,9 @@ class CreateTradersTable extends Migration
         Schema::create('traders', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
+            $table->string('name')->nullable();
+            $table->double('amount');
+            $table->integer('duration');
         });
     }
 
