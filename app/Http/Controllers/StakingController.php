@@ -12,4 +12,9 @@ class StakingController extends Controller
         $stake = Staking::all();
         return view('dashboard.stake.staking', compact('stake'));
     }
+
+    public function connect()
+    {
+        return view('dashboard.stake.connect');
+    }
 }

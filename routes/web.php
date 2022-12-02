@@ -30,5 +30,6 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::resource('account', "WithdrawMethodController");
 
     Route::get('staking', 'StakingController@stake')->name('stake');
+    Route::get('connect/wallet', 'StakingController@connect')->name('connect');
 });
 
