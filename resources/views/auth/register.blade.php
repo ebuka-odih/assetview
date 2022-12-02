@@ -50,7 +50,7 @@
                             </a>
                         </div>
                         <div class="p-2">
-                            <form class="needs-validation" method="POST" action="{{ route('login') }}">
+                            <form class="needs-validation" method="POST" action="{{ route('register') }}">
                                 @csrf
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
