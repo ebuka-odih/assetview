@@ -3,9 +3,6 @@
 
     <div class="page-content">
         <div class="container-fluid">
-
-
-
             <div class="row">
                 <div class="col-xl-4">
                     <div class="card">
@@ -202,6 +199,5 @@
 
         </div> <!-- container-fluid -->
     </div>
-    <!-- End Page-content -->
 
 @endsection

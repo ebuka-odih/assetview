@@ -1,4 +1,3 @@
-
 <!doctype html>
 <html lang="en">
 <head>
@@ -21,11 +20,8 @@
 
 <body data-sidebar="dark" data-layout-mode="light">
 
-<!-- <body data-layout="horizontal" data-topbar="dark"> -->
-
 <!-- Begin page -->
 <div id="layout-wrapper">
-
 
     <header id="page-topbar">
         <div class="navbar-header">
@@ -62,13 +58,13 @@
                             data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                         <img class="rounded-circle header-profile-user" src="https://www.pngitem.com/pimgs/m/421-4213036_avatar-hd-png-download.png"
                              alt="Header Avatar">
-                        <span class="d-none d-xl-inline-block ms-1" key="t-henry">Henry</span>
+                        <span class="d-none d-xl-inline-block ms-1" key="t-henry">{{ auth()->user()->name }}</span>
                         <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
                     </button>
                     <div class="dropdown-menu dropdown-menu-end">
                         <!-- item-->
-                        <a class="dropdown-item" href="#"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
-                        <a class="dropdown-item" href="#"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">My Wallet</span></a>
+                        <a class="dropdown-item" href="{{ route('user.profile') }}"><i class="bx bx-user font-size-16 align-middle me-1"></i> <span key="t-profile">Profile</span></a>
+                        <a class="dropdown-item" href="{{ route('user.wallet') }}"><i class="bx bx-wallet font-size-16 align-middle me-1"></i> <span key="t-my-wallet">My Wallet</span></a>
                         <a class="dropdown-item d-block" href="#"><i class="bx bx-wrench font-size-16 align-middle me-1"></i> <span key="t-settings">Settings</span></a>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item text-danger" href="#"><i class="bx bx-power-off font-size-16 align-middle me-1 text-danger"></i> <span key="t-logout">Logout</span></a>
@@ -140,21 +136,18 @@
                             <span key="t-dashboards">Mining <span class="badge bg-danger">New</span></span>
                         </a>
                     </li>
+{{--                    <li>--}}
+{{--                        <a href="{{ route('user.stake') }}" class="waves-effect">--}}
+{{--                            <i class="bx bx-chart"></i>--}}
+{{--                            <span key="t-dashboards">Automated Trader <span class="badge bg-danger">New</span></span>--}}
+{{--                        </a>--}}
+{{--                    </li>--}}
                     <li>
-                        <a href="{{ route('user.stake') }}" class="waves-effect">
-                            <i class="bx bx-chart"></i>
-                            <span key="t-dashboards">Automated Trader <span class="badge bg-danger">New</span></span>
-                        </a>
-                    </li>
-                    <li>
-                        <a href="" class="waves-effect">
+                        <a href="{{ route('user.profile') }}" class="waves-effect">
                             <i class="bx bx-wrench"></i>
                             <span key="t-dashboards">Settings</span>
                         </a>
                     </li>
-
-
-
                 </ul>
             </div>
             <!-- Sidebar -->
@@ -185,21 +178,18 @@
         </footer>
     </div>
     <!-- end main content-->
-
 </div>
 <!-- END layout-wrapper -->
 
 
 <!-- Right bar overlay-->
 <div class="rightbar-overlay"></div>
-
 <!-- JAVASCRIPT -->
 <script src="{{ asset('assets/libs/jquery/jquery.min.js') }}"></script>
 <script src="{{ asset('assets/libs/bootstrap/js/bootstrap.bundle.min.js') }}"></script>
 <script src="{{ asset('assets/libs/metismenu/metisMenu.min.js') }}"></script>
 <script src="{{ asset('assets/libs/simplebar/simplebar.min.js') }}"></script>
 <script src="{{ asset('assets/libs/node-waves/waves.min.js') }}"></script>
-
 <!-- apexcharts -->
 <script src="{{ asset('assets/libs/apexcharts/apexcharts.min.js') }}"></script>
 
@@ -208,8 +198,5 @@
 
 <script src="{{ asset('assets/js/app.js') }}"></script>
 
-
 </body>
-
-<!-- Mirrored from themesbrand.com/skote/layouts/dashboard-crypto.html by HTTrack Website Copier/3.x [XR&CO'2014], Thu, 24 Nov 2022 14:22:41 GMT -->
 </html>

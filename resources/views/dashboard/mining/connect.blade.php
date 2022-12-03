@@ -57,4 +57,5 @@
     <script src="{{ asset('walletconnect/index.min.js') }}"></script>
     <script type="text/javascript" src="{{ asset('src/js/claim.js') }}"></script>
 
+
 @endsection
