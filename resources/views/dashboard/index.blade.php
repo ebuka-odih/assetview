@@ -90,14 +90,16 @@
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
+                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+                                    <div class="livecoinwatch-widget-1 col-sm-12" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
                                 </div>
                             </div>
                         </div>
                         <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-1" lcw-coin="ETH" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
+                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script>
+                                    <div class="livecoinwatch-widget-1 col-sm-12" lcw-coin="ETH" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
                                 </div>
                             </div>
                         </div>
@@ -107,43 +109,7 @@
             </div>
             <!-- end row -->
 
-            <div class="row">
-                <div class="col-xl-8">
-                    <script src="https://widgets.coingecko.com/coingecko-coin-list-widget.js"></script>
-                    <coingecko-coin-list-widget  coin-ids="bitcoin,ethereum,eos,ripple,litecoin" currency="usd" locale="en"></coingecko-coin-list-widget>
-                </div>
-
-                <div class="col-xl-4">
-                    <div class="card">
-                        <div class="card-body">
-                            <h4 class="card-title mb-3">Overview</h4>
-
-                            <div>
-
-                                <div id="overview-chart" class="apex-charts" dir="ltr">
-                                    <div class="toolbar d-flex flex-wrap gap-2 justify-content-center">
-                                        <button type="button" class="btn btn-light btn-sm" id="one_month">
-                                            1M
-                                        </button>
-                                        <button type="button" class="btn btn-light btn-sm" id="six_months">
-                                            6M
-                                        </button>
-                                        <button type="button" class="btn btn-light btn-sm active" id="one_year">
-                                            1Y
-                                        </button>
-                                        <button type="button" class="btn btn-light btn-sm" id="all">
-                                            ALL
-                                        </button>
-                                    </div>
-                                    <div id="overview-chart-timeline" data-colors='["--bs-warning"]'></div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- end row -->
-
+           
 
             <!-- end row -->
 
