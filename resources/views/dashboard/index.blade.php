@@ -87,67 +87,17 @@
                         </div>
                     </div>
                     <div class="row">
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <p class="text-muted mb-4"><i class="mdi mdi-bitcoin h2 text-warning align-middle mb-0 me-3"></i> Bitcoin </p>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div>
-                                                <h5>$ 9134.39</h5>
-                                                <p class="text-muted text-truncate mb-0">+ 0.0012 ( 0.2 % ) <i class="mdi mdi-arrow-up ms-1 text-success"></i></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div>
-                                                <div id="area-sparkline-chart-1" data-colors='["--bs-warning"]' class="apex-charts"></div>
-                                            </div>
-                                        </div>
-                                    </div>
+                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-1" lcw-coin="BTC" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
+                        <div class="col-sm-6">
                             <div class="card">
                                 <div class="card-body">
-                                    <p class="text-muted mb-4"><i class="mdi mdi-ethereum h2 text-primary align-middle mb-0 me-3"></i> Ethereum </p>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div>
-                                                <h5>$ 245.44</h5>
-                                                <p class="text-muted text-truncate mb-0">- 4.102 ( 0.1 % ) <i class="mdi mdi-arrow-down ms-1 text-danger"></i></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div>
-                                                <div id="area-sparkline-chart-2" data-colors='["--bs-primary"]' class="apex-charts"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <p class="text-muted mb-4"><i class="mdi mdi-litecoin h2 text-info align-middle mb-0 me-3"></i> litecoin </p>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div>
-                                                <h5>$ 63.61</h5>
-                                                <p class="text-muted text-truncate mb-0">+ 1.792 ( 0.1 % ) <i class="mdi mdi-arrow-up ms-1 text-success"></i></p>
-                                            </div>
-                                        </div>
-                                        <div class="col-6">
-                                            <div>
-                                                <div id="area-sparkline-chart-3" data-colors='["--bs-info"]' class="apex-charts"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-
+                                    <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-1" lcw-coin="ETH" lcw-base="USD" lcw-secondary="BTC" lcw-period="d" lcw-color-tx="#ffffff" lcw-color-pr="#58c7c5" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
                                 </div>
                             </div>
                         </div>
