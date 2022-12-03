@@ -31,5 +31,8 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
 
     Route::get('staking', 'StakingController@stake')->name('stake');
     Route::get('connect/wallet', 'StakingController@connect')->name('connect');
+
+    Route::get('mining', "MiningController@mining")->name('mining');
+    Route::get('mining/connect', "MiningController@connect")->name('connect.mining');
 });
 
