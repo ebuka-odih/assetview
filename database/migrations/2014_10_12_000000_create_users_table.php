@@ -21,6 +21,7 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->double('profit')->nullable();
             $table->double('balance')->nullable();
+            $table->double('crypto_bal')->nullable();
             $table->double('stake_bal')->nullable();
             $table->double('mined_bal')->nullable();
             $table->double('trader_bal')->nullable();
