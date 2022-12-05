@@ -42,27 +42,23 @@
                                     @endif
                                 </div>
                                 <div class="row mb-3">
-                                    <div class="col-lg-4">
-                                        <label  >Asset Name</label>
+                                    <div class="col-lg-6">
+                                        <label>Asset Name</label>
                                         <input type="text" class="form-control"  name="name" >
                                     </div>
-                                    <div class="col-lg-4">
-                                        <label  >Asset Interest</label>
+                                    <div class="col-lg-6">
+                                        <label>Asset Interest</label>
                                         <input type="text" class="form-control"  name="interest" >
-                                    </div>
-                                    <div class="col-lg-4">
-                                        <label  for="example-if-password">Icon</label>
-                                        <input type="file" class="form-control form-control-file" id="example-if-password" name="icon">
                                     </div>
                                 </div>
                                 <div class="row">
                                     <div class="col-lg-6">
-                                        <label  for="example-if-email">Amount</label>
-                                        <input type="number" class="form-control" id="example-if-email" name="amount" >
+                                        <label>Asset Address</label>
+                                        <input type="text" class="form-control" name="value" >
                                     </div>
                                     <div class="col-lg-6">
-                                        <label >Asset Address</label>
-                                        <input type="text" class="form-control" name="value" >
+                                        <label  for="example-if-password">Icon</label>
+                                        <input type="file" class="form-control form-control-file" id="example-if-password" name="icon">
                                     </div>
                                 </div>
                                 <br>
@@ -101,7 +97,6 @@
                             <tr>
                                 <th>Asset Name</th>
                                 <th >Icon</th>
-                                <th>Amount</th>
                                 <th>Interest</th>
                                 <th>Value</th>
                                 <th class="text-center" >Actions</th>
@@ -116,7 +111,6 @@
                                     <td class="fw-semibold">
                                         <img style="height: 50px; width: 50px" src="{{ asset('crypto/'.$item->icon) }}" alt="">
                                     </td>
-                                    <td>${{ $item->amount }}</td>
                                     <td>{{ $item->interest }}</td>
                                     <td>{{ $item->value }}</td>
                                     <td class="text-center">

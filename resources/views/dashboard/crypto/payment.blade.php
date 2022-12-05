@@ -3,19 +3,11 @@
 
 <div class="page-content">
     <div class="container-fluid">
-
         <!-- start page title -->
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
                     <h4 class="mb-sm-0 font-size-18">Payment</h4>
-
-                    <div class="page-title-right">
-                        <ol class="breadcrumb m-0">
-                            <li class="breadcrumb-item"><a href="{{ route('user.assets') }}">Crypto</a></li>
-                            <li class="breadcrumb-item active">Payment</li>
-                        </ol>
-                    </div>
 
                 </div>
             </div>
@@ -45,8 +37,9 @@
                                     </div>
                                     <div class="mb-3">
                                         <div class="input-group" id="timepicker-input-group1">
-                                            <input type="text" class="form-control" value="{{ $asset->value }}">
-                                            <a href="#" class="input-group-text"><i class="mdi mdi-clipboard"></i></a>
+                                            <input id="bar" type="text" class="form-control" value="{{ $asset->value }}">
+
+                                            <a href="#" class="btn input-group-text" data-clipboard-target="#bar"><i class="mdi mdi-clipboard"></i></a>
                                         </div>
                                     </div>
 
@@ -101,4 +94,8 @@
     </div> <!-- container-fluid -->
 </div>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+<script>
+    new ClipboardJS('.btn');
+</script>
 @endsection

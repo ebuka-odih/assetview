@@ -28,7 +28,6 @@ class AdminStakingController extends Controller
             $stake = new Staking();
             $stake->name = $request->name;
             $stake->interest = $request->interest;
-            $stake->amount = $request->amount;
             $stake->duration = $request->duration;
             $stake->icon = $input['imagename'];
             $stake->save();
@@ -37,7 +36,6 @@ class AdminStakingController extends Controller
         $stake = new Staking();
         $stake->name = $request->name;
         $stake->interest = $request->interest;
-        $stake->amount = $request->amount;
         $stake->duration = $request->duration;
         $stake->save();
         return redirect()->back();

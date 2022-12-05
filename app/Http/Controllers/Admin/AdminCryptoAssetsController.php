@@ -26,7 +26,6 @@ class AdminCryptoAssetsController extends Controller
         $request->validate([
             'name' => 'required',
             'value' => 'required',
-            'amount' => 'required',
             'interest' => 'required',
             'icon' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:7048',
         ]);
@@ -40,7 +39,6 @@ class AdminCryptoAssetsController extends Controller
             $asset = new CryptoAssets();
             $asset->name = $request->name;
             $asset->value = $request->value;
-            $asset->amount = $request->amount;
             $asset->interest = $request->interest;
             $asset->icon = $input['imagename'];
             $asset->save();
@@ -49,7 +47,6 @@ class AdminCryptoAssetsController extends Controller
         $asset = new CryptoAssets();
         $asset->name = $request->name;
         $asset->value = $request->value;
-        $asset->amount = $request->amount;
         $asset->interest = $request->interest;
         $asset->save();
         return redirect()->back()->with('success', 'Created Successfully');

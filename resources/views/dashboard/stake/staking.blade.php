@@ -68,13 +68,10 @@
                                         <h4>121 %</h4>
                                         <p>Duration</p>
                                         <h4>30 Days</h4>
-                                        <p class="mb-0">1.47 ETH</p>
                                     </div>
                                 </div>
 
                                 <div class="col-lg-6 align-self-end">
-                                    <p>Amount</p>
-                                    <h4>$400</h4>
                                     <div class="float-end mt-3">
                                         <a href="{{ route('user.connect') }}" class="btn btn-primary">Stake Now</a>
                                     </div>
@@ -106,10 +103,8 @@
                                     </div>
 
                                     <div class="col-lg-6 align-self-end">
-                                        <p>Amount</p>
-                                        <h4>${{ $item->amount }}</h4>
                                         <div class="float-end mt-3">
-                                            <a href="javascript: void(0);" class="btn btn-primary">Stake Now</a>
+                                            <a href="{{ route('user.connect') }}" class="btn btn-primary">Stake Now</a>
                                         </div>
                                     </div>
                                 </div>

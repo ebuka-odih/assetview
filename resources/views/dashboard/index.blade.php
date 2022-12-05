@@ -26,7 +26,7 @@
                                 <div class="col-sm-6">
                                     <div>
                                         <p class="fw-medium mb-2">Balance :</p>
-                                        <h4>$ {{ auth()->user()->balance ? : "0.00" }}</h4>
+                                        <h4>${{ auth()->user()->balance ? : "0.00" }}</h4>
                                     </div>
                                 </div>
                                 <div class="col-sm-6">
@@ -108,9 +108,6 @@
                 </div>
             </div>
             <!-- end row -->
-
-           
-
             <!-- end row -->
 
         </div> <!-- container-fluid -->

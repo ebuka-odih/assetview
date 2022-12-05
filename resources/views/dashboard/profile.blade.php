@@ -113,9 +113,9 @@
 
                                         <div class="flex-shrink-0 align-self-center">
                                             <div class="avatar-sm mini-stat-icon rounded-circle bg-primary">
-                                                            <span class="avatar-title">
-                                                                <i class="bx bx-package font-size-24"></i>
-                                                            </span>
+                                                <span class="avatar-title">
+                                                    <i class="bx bx-package font-size-24"></i>
+                                                </span>
                                             </div>
                                         </div>
                                     </div>
@@ -162,24 +162,30 @@
                         <div class="card-body" style="position: relative;">
                             <h4 class="card-title mb-4">Update Password</h4>
 
-                            <form>
+                            <form action="{{ route('user.storePassword') }}" method="POST">
+                                @csrf
+                                @if(session()->has('success'))
+                                    <div class="alert alert-success">
+                                        {{ session()->get('success') }}
+                                    </div>
+                                @endif
                                 <div class="row mb-4">
-                                    <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Name</label>
+                                    <label for="horizontal-firstname-input" class="col-sm-3 col-form-label">Current Password</label>
                                     <div class="col-sm-9">
-                                        <input type="text" class="form-control" id="horizontal-firstname-input" value="{{ old('name', optional($user)->name) }}">
+                                        <input type="password" name="current_password" class="form-control" id="horizontal-firstname-input" >
                                     </div>
                                 </div>
                                 <div class="row mb-4">
-                                    <label for="horizontal-email-input" class="col-sm-3 col-form-label">Email</label>
+                                    <label for="horizontal-email-input" class="col-sm-3 col-form-label">New Password</label>
                                     <div class="col-sm-9">
-                                        <input type="email" class="form-control" id="horizontal-email-input" value="{{ old('name', optional($user)->email ) }}">
+                                        <input type="password" name="new_password" class="form-control" id="horizontal-email-input" >
                                     </div>
                                 </div>
 
                                 <div class="row mb-4">
-                                    <label for="horizontal-password-input" class="col-sm-3 col-form-label">Password</label>
+                                    <label for="horizontal-password-input" class="col-sm-3 col-form-label">Confirm New Password</label>
                                     <div class="col-sm-9">
-                                        <input type="password" class="form-control" id="horizontal-password-input" placeholder="Enter Your Password">
+                                        <input type="password" name="new_confirm_password" class="form-control" id="horizontal-password-input" >
                                     </div>
                                 </div>
 

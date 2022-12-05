@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateCryptoAssetsTable extends Migration
+class CreateFundingsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,13 @@ class CreateCryptoAssetsTable extends Migration
      */
     public function up()
     {
-        Schema::create('crypto_assets', function (Blueprint $table) {
+        Schema::create('fundings', function (Blueprint $table) {
             $table->id();
             $table->timestamps();
-            $table->string('name');
-            $table->string('icon')->nullable();
-            $table->string('value');
+            $table->bigInteger('user_id');
+            $table->string('type');
+            $table->double('amount');
+            $table->integer('status');
         });
     }
 
@@ -29,6 +30,6 @@ class CreateCryptoAssetsTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('crypto_assets');
+        Schema::dropIfExists('fundings');
     }
 }

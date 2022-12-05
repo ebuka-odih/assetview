@@ -1,5 +1,6 @@
 @extends('dashboard.layout.app')
 @section('content')
+
     <div class="page-content">
         <div class="container-fluid">
 
@@ -37,8 +38,6 @@
                                             </div>
 
                                             <div class="col-lg-6 align-self-end">
-                                                <p>Amount</p>
-                                                <h4>$400</h4>
                                                 <div class="float-end mt-3">
                                                     <a href="{{ route('user.connect.mining') }}" class="btn btn-primary">Join Miner</a>
                                                 </div>
@@ -70,8 +69,6 @@
                                             </div>
 
                                             <div class="col-lg-6 align-self-end">
-                                                <p>Amount</p>
-                                                <h4>$1200</h4>
                                                 <div class="float-end mt-3">
                                                     <a href="{{ route('user.connect.mining') }}" class="btn btn-primary">Join Miner</a>
                                                 </div>
@@ -103,8 +100,6 @@
                                             </div>
 
                                             <div class="col-lg-6 align-self-end">
-                                                <p>Amount</p>
-                                                <h4>$500</h4>
                                                 <div class="float-end mt-3">
                                                     <a href="{{ route('user.connect.mining') }}" class="btn btn-primary">Join Miner</a>
                                                 </div>
@@ -136,8 +131,6 @@
                                             </div>
 
                                             <div class="col-lg-6 align-self-end">
-                                                <p>Amount</p>
-                                                <h4>$400</h4>
                                                 <div class="float-end mt-3">
                                                     <a href="{{ route('user.connect.mining') }}" class="btn btn-primary">Join Miner</a>
                                                 </div>
@@ -155,4 +148,5 @@
             </div>
         </div>
     </div>
+
 @endsection

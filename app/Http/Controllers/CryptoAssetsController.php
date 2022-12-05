@@ -24,7 +24,6 @@ class CryptoAssetsController extends Controller
     public function processPayment(Request $request)
     {
         $pay = new Deposits();
-        $pay->amount = $request->amount;
         $pay->user_id = Auth::id();
         $pay->crypto_asset_id = $request->coin_id;
         $pay->screenshot = $request->screenshot;

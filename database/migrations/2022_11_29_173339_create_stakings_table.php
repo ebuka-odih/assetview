@@ -18,7 +18,6 @@ class CreateStakingsTable extends Migration
             $table->timestamps();
             $table->string('name');
             $table->string('interest');
-            $table->double('amount');
             $table->string('duration')->nullable();
             $table->string('icon')->nullable();
         });

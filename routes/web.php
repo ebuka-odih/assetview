@@ -16,6 +16,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('dashboard', "UserController@dashboard")->name('dashboard');
     Route::get('profile', "UserController@profile")->name('profile');
     Route::patch('updateProfile', "UserController@updateProfile")->name('updateProfile');
+    Route::post('storePassword', "UserController@storePassword")->name('storePassword');
 
     Route::get('crypto-hold', "CryptoAssetsController@assets")->name('assets');
     Route::get('crypto-hold/payment/3536{id}2', "CryptoAssetsController@payment")->name('payment');
@@ -36,5 +37,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
 
     Route::get('mining', "MiningController@mining")->name('mining');
     Route::get('mining/connect', "MiningController@connect")->name('connect.mining');
+
+
 });
 

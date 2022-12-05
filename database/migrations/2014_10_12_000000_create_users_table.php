@@ -19,7 +19,11 @@ class CreateUsersTable extends Migration
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->double('profit')->nullable();
             $table->double('balance')->nullable();
+            $table->double('stake_bal')->nullable();
+            $table->double('mined_bal')->nullable();
+            $table->double('trader_bal')->nullable();
 
             $table->integer('admin')->default(0);
             $table->integer('status')->default(1);
