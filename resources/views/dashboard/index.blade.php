@@ -30,7 +30,7 @@
                         <div class="col-sm-4">
                             <div class="card">
                                 <div class="card-body">
-                                    <h4 class="text-muted mb-4"><i class="mdi mdi-cash-usd h2 text-warning align-middle mb-0 me-3"></i> Balance </h4>
+                                    <h4 class="text-muted mb-4"><i class="mdi mdi-cash-usd h2 text-warning align-middle mb-0 me-3"></i> Deposit </h4>
 
                                     <div class="row">
                                         <div class="col-6">
@@ -59,37 +59,7 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="text-muted mb-4"><i class="mdi mdi-cash-usd h2 text-secondary align-middle mb-0 me-3"></i> Withdrawal </h4>
 
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div>
-                                                <h5>$ {{ $user->staked_bal ? : "0.00" }}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="col-sm-4">
-                            <div class="card">
-                                <div class="card-body">
-                                    <h4 class="text-muted mb-4"><i class="mdi mdi-cash-usd h2 text-black align-middle mb-0 me-3"></i> Hold Assets </h4>
-
-                                    <div class="row">
-                                        <div class="col-6">
-                                            <div>
-                                                <h5>$ {{ $user->crypto_bal ? : "0.00" }}</h5>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                         <div class="col-sm-4">
                             <div class="card">
                                 <div class="card-body">

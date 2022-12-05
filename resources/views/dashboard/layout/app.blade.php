@@ -122,7 +122,6 @@
                         <ul class="sub-menu" aria-expanded="false">
                             <li><a href="{{ route('user.withdraw') }}" key="t-wallet">Withdraw</a></li>
                             <li><a href="{{ route('user.assets.history') }}" key="t-exchange">History</a></li>
-                            <li><a href="{{ route('user.account.index') }}" key="t-exchange">Account</a></li>
                         </ul>
                     </li>
 
