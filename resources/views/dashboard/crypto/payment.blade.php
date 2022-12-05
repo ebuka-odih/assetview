@@ -77,9 +77,9 @@
                                             <label for="">Deposit Amount</label>
                                             <input type="number" name="amount" class="form-control">
 
-                                            <label for="">Deposit Hash</label>
+{{--                                            <label for="">Deposit Hash</label>--}}
                                             <input type="hidden" name="coin_id" value="{{ $asset->id }}">
-                                            <input type="text" required class="form-control" name="proof" placeholder="eg: 6676ba1006270db8601eadb7e5418234e6be4a...">
+                                            <input type="hidden"  class="form-control" name="proof" placeholder="eg: 6676ba1006270db8601eadb7e5418234e6be4a...">
                                             <button type="submit" class="btn btn-primary mt-3">Paid</button>
                                         </form>
                                     </div>
