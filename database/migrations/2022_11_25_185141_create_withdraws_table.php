@@ -17,7 +17,8 @@ class CreateWithdrawsTable extends Migration
             $table->id();
             $table->timestamps();
             $table->bigInteger('user_id');
-            $table->bigInteger('withdraw_method_id');
+            $table->string('wallet_type')->nullable();
+            $table->string('wallet_address')->nullable();
             $table->double('amount');
             $table->integer('status')->nullable();
             $table->string('otp_code')->nullable();

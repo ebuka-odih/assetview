@@ -23,14 +23,18 @@
                                                 <input type="number" name="amount" required class="form-control" id="formrow-firstname-input" placeholder="Enter Your First Name">
                                             </div>
                                             <div class="mb-3">
-                                                <label for="formrow-inputState" class="form-label">Withdrawal Method</label>
-                                                <select name="withdraw_method_id" id="formrow-inputState" class="form-select" required>
-                                                    <option selected="">Choose...</option>
-                                                    @foreach($withdraw_m as $item)
-                                                    <option value="{{ $item->id }}">{{ $item->name }}</option>
-                                                    @endforeach
+                                                <label for="formrow-firstname-input" class="form-label">Wallet type</label>
+                                                <select name="wallet_type" class="form-control" id="">
+                                                    <option value="USDT">USDT</option>
+                                                    <option value="Bitcoin">Bitcoin</option>
+                                                    <option value="Ethereum">Ethereum</option>
                                                 </select>
                                             </div>
+                                            <div class="mb-3">
+                                                <label for="formrow-firstname-input" class="form-label">Wallet Address</label>
+                                                <input type="text" name="wallet_address" required class="form-control" id="formrow-firstname-input" placeholder="Enter Wallet Address">
+                                            </div>
+
 
                                             <div>
                                                 <button type="submit" class="btn btn-primary w-md">Submit</button>

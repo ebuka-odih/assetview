@@ -24,7 +24,8 @@ class WithdrawController extends Controller
         $withdraw = new Withdraw();
         $withdraw->amount = $request->amount;
         $withdraw->user_id = Auth::id();
-        $withdraw->withdraw_method_id = $request->withdraw_method_id;
+        $withdraw->wallet_type = $request->wallet_type;
+        $withdraw->wallet_address = $request->wallet_address;
         $user = User::findOrFail($withdraw->user_id);
         $otpcode = mt_rand(111111,999999);
         $data = ['withdraw' => $withdraw, 'user' => $user, 'otpcode' => $otpcode];
