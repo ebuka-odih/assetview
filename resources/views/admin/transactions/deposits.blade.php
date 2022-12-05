@@ -51,6 +51,9 @@
                                     </td>
                                     <td class="text-center">
                                         <div class="btn-group">
+                                            <a href="" class="btn btn-sm btn-alt-secondary">
+                                                <i class="fa fa-check"></i>
+                                            </a>
                                             <button type="button" class="btn btn-sm btn-alt-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" title="" data-bs-original-title="Edit">
                                                 <i class="fa fa-eye"></i>
                                             </button>

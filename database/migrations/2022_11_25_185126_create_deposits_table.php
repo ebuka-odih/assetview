@@ -18,7 +18,7 @@ class CreateDepositsTable extends Migration
             $table->timestamps();
             $table->bigInteger('user_id');
             $table->bigInteger('crypto_asset_id');
-            $table->double('amount');
+            $table->double('amount')->nullable();
             $table->integer('status')->nullable();
             $table->string('screenshot')->nullable();
         });

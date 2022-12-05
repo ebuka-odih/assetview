@@ -64,10 +64,10 @@
                                 <input type="hidden" name="referred_by" value="{{ request()->id}}" />
 
                                 <div class="mb-3">
-                                    <label for="username" class="form-label">Name</label>
-                                    <input type="text" name="name" class="form-control" id="username" placeholder="Enter Fullname" required>
+                                    <label for="" class="form-label">Name</label>
+                                    <input type="text" name="name" class="form-control" id="" placeholder="Enter Fullname" required>
                                     <div class="invalid-feedback">
-                                        Please Enter Fullname
+                                         Enter Fullname
                                     </div>
                                 </div>
 
@@ -75,7 +75,14 @@
                                     <label for="useremail" class="form-label">Email</label>
                                     <input type="email" name="email" class="form-control" id="useremail" placeholder="Enter email" required>
                                     <div class="invalid-feedback">
-                                        Please Enter Email
+                                         Enter Email
+                                    </div>
+                                </div>
+                                <div class="mb-3">
+                                    <label for="username" class="form-label">Username</label>
+                                    <input type="text" name="username" class="form-control" id="username" placeholder="Enter Username" required>
+                                    <div class="invalid-feedback">
+                                         Enter Username
                                     </div>
                                 </div>
 
