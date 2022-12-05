@@ -144,46 +144,6 @@
                             <script defer src="https://www.livecoinwatch.com/static/lcw-widget.js"></script> <div class="livecoinwatch-widget-3" lcw-base="USD" lcw-d-head="true" lcw-d-name="true" lcw-d-code="true" lcw-d-icon="true" lcw-color-tx="#ffffff" lcw-color-bg="#1f2434" lcw-border-w="1" ></div>
                         </div>
 
-                        <div class="card-body border-top">
-                            <div class="row">
-                                <div class="col-sm-6">
-                                    <div>
-                                        <p class="fw-medium mb-2">Balance :</p>
-                                        <h4>${{ auth()->user()->balance ? : "0.00" }}</h4>
-                                    </div>
-                                </div>
-                                <div class="col-sm-6">
-                                    <div class="mt-4 mt-sm-0">
-                                        <p class="fw-medium mb-2">Coin :</p>
-                                        <div class="d-inline-flex align-items-center mt-1">
-
-                                            <a href="javascript: void(0);" class="m-1">
-                                                <div class="avatar-xs">
-                                                    <span class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18">
-                                                        <i class="mdi mdi-bitcoin"></i>
-                                                    </span>
-                                                </div>
-                                            </a>
-                                            <a href="javascript: void(0);" class="m-1">
-                                                <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-primary bg-soft text-primary font-size-18">
-                                                                    <i class="mdi mdi-ethereum"></i>
-                                                                </span>
-                                                </div>
-                                            </a>
-                                            <a href="javascript: void(0);" class="m-1">
-                                                <div class="avatar-xs">
-                                                                <span class="avatar-title rounded-circle bg-info bg-soft text-info font-size-18">
-                                                                    <i class="mdi mdi-litecoin"></i>
-                                                                </span>
-                                                </div>
-                                            </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
                         <div class="card-footer bg-transparent border-top">
                             <div class="text-center">
                                 <a href="{{ route('user.assets') }}" class="btn btn-primary me-2 w-md">HOLD</a>

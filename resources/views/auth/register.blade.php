@@ -61,6 +61,7 @@
                                         </ul>
                                     </div>
                                 @endif
+                                <input type="hidden" name="referred_by" value="{{ request()->id}}" />
 
                                 <div class="mb-3">
                                     <label for="username" class="form-label">Name</label>
