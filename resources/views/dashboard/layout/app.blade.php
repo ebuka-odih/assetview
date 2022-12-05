@@ -109,7 +109,7 @@
                             <span key="t-crypto">Crypto Hold</span>
                         </a>
                         <ul class="sub-menu" aria-expanded="false">
-                            <li><a href="{{ route('user.wallet') }}" key="t-wallet">Wallet</a></li>
+{{--                            <li><a href="{{ route('user.wallet') }}" key="t-wallet">Wallet</a></li>--}}
                             <li><a href="{{ route('user.assets') }}" key="">Hold</a></li>
                             <li><a href="{{ route('user.assets.history') }}" key="t-exchange">Transactions</a></li>
                         </ul>

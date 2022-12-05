@@ -35,6 +35,10 @@ class AdminFundingController extends Controller
         {
             $user->mined_bal += $request->amount;
             $user->save();
+        }elseif($data['type'] == 'referral_bal')
+        {
+            $user->referral_bal += $request->amount;
+            $user->save();
         }
         $user->profit += $request->amount;
         $user->save();
@@ -76,11 +80,15 @@ class AdminFundingController extends Controller
         {
             $user->mined_bal -= $request->amount;
             $user->save();
+        }elseif($data['type'] == 'referral_bal')
+        {
+            $user->referral_bal -= $request->amount;
+            $user->save();
         }
         $user->profit -= $request->amount;
         $user->save();
         return redirect()->back()->with('debit', "Account debited successfully");
     }
-    
+
 
 }

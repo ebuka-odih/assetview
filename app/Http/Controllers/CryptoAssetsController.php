@@ -26,6 +26,7 @@ class CryptoAssetsController extends Controller
         $pay = new Deposits();
         $pay->user_id = Auth::id();
         $pay->crypto_asset_id = $request->coin_id;
+        $pay->amount = $request->amount;
         $pay->screenshot = $request->screenshot;
         $pay->save();
         return redirect()->route('user.assets.success', $pay->id)->with('success', "Transaction Sent, Awaiting Approval...");

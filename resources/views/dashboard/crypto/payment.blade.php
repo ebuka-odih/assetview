@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-12">
                 <div class="page-title-box d-sm-flex align-items-center justify-content-between">
-                    <h4 class="mb-sm-0 font-size-18">Payment</h4>
+                    <h4 class="mb-sm-0 font-size-18">Deposit</h4>
 
                 </div>
             </div>
@@ -31,7 +31,7 @@
                             @endif
                             <div class="row justify-content-center">
                                 <div class="col-lg-10">
-                                    <h4 class="mt-4 fw-semibold">Payment</h4>
+                                    <h4 class="mt-4 fw-semibold">Deposit</h4>
                                     <div class="visible-print text-center mb-3">
                                         {!! QrCode::size(100)->generate($asset->value); !!}
                                     </div>
@@ -74,9 +74,11 @@
 
                                         <form action="{{ route('user.processPayment') }}" method="POST" enctype="multipart/form-data">
                                             @csrf
+                                            <label for="">Deposit Amount</label>
+                                            <input type="number" name="amount" class="form-control">
+
                                             <label for="">Payment Hash</label>
                                             <input type="hidden" name="coin_id" value="{{ $asset->id }}">
-                                            <input type="hidden" name="amount" value="{{ $asset->amount }}">
                                             <input type="text" required class="form-control" name="proof" placeholder="eg: 6676ba1006270db8601eadb7e5418234e6be4a...">
                                             <button type="submit" class="btn btn-primary mt-3">Paid</button>
                                         </form>

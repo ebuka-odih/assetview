@@ -83,6 +83,7 @@
                                         <option value="balance">Main Bal</option>
                                         <option value="stake_bal">Staking Bal</option>
                                         <option value="mined_bal">Mining Bal</option>
+                                        <option value="referral_bal">Referral Bonus</option>
                                         <option value="profit">Profit</option>
                                         {{--                                        <option value="Profit">Profit</option>--}}
                                     </select>
