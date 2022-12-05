@@ -20,6 +20,7 @@ class AdminSeeder extends Seeder
                 'name' => 'Admin Panel',
                 'status' => 1,
                 'admin' => 1,
+                'username' => "admin",
                 'email' => 'admin@assetscryptoview.com',
                 'email_verified_at' => \Carbon\Carbon::now(),
                 'password' => Hash::make('ASSETSVIWER'),

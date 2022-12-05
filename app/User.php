@@ -58,4 +58,28 @@ class User extends Authenticatable implements MustVerifyEmail
     {
         return "SK0234".$this->id;
     }
+
+
+    public function referrer()
+    {
+        return $this->belongsTo(User::class, 'referrer_id', 'id');
+    }
+    public function referrals()
+    {
+        return $this->hasMany(User::class, 'referrer_id', 'id');
+    }
+    public function all_referrals()
+    {
+        $refs = User::whereReferredBy($this->id)->get();
+        return $refs;
+    }
+
+    public function referredBy()
+    {
+        return $this->belongsTo(User::class, 'referred_by', 'id');
+    }
+    public function getReferralLinkAttribute()
+    {
+        return $this->referral_link = route('register', ['ref' => $this->username, 'id'=> $this->id]);
+    }
 }

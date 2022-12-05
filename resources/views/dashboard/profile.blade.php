@@ -47,6 +47,22 @@
                                         <th scope="row">E-mail :</th>
                                         <td>{{ $user->email }}</td>
                                     </tr>
+                                    <tr>
+                                        <th scope="row">Username :</th>
+                                        <td>{{ $user->username }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Phone :</th>
+                                        <td>{{ $user->phone ? : "NAN" }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">Country :</th>
+                                        <td>{{ $user->country ? : "NAN" }}</td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">City :</th>
+                                        <td>{{ $user->city ? : "NAN" }}</td>
+                                    </tr>
 
                                     </tbody>
                                 </table>

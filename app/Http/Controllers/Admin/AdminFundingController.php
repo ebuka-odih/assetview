@@ -81,5 +81,6 @@ class AdminFundingController extends Controller
         $user->save();
         return redirect()->back()->with('debit', "Account debited successfully");
     }
+    
 
 }
