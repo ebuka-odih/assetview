@@ -10,7 +10,12 @@
                             <div class="row">
                                 <div class="col-lg-9 col-sm-8">
                                     <div  class="p-4">
-                                        <h5 class="text-primary">Welcome Back !</h5>
+                                        <h5 class="text-primary">Welcome Back !</h5><br>
+                                        <div class="input-group" id="timepicker-input-group1">
+                                            <label for="example-week-input" class="col-md-2 col-form-label">Referral Link</label>
+                                            <input id="bar" type="text" class="form-control" value="{{ auth()->user()->referral_link }}">
+                                            <a href="#" class="btn input-group-text" data-clipboard-target="#bar"><i class="mdi mdi-clipboard"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                                 <div class="col-lg-3 col-sm-4 align-self-center">
@@ -116,6 +121,22 @@
                                 </div>
                             </div>
                         </div>
+                        <div class="col-sm-4">
+                            <div class="card">
+                                <div class="card-body">
+                                    <h4 class="text-muted mb-4"><i class="mdi mdi-cash-usd h2 text-secondary align-middle mb-0 me-3"></i> Referral Bonus </h4>
+
+                                    <div class="row">
+                                        <div class="col-6">
+                                            <div>
+                                                <h5>$ {{ $user->referral_bal ? : "0.00" }}</h5>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
                     <div class="row">
@@ -158,5 +179,10 @@
 
         </div> <!-- container-fluid -->
     </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/2.0.10/clipboard.min.js"></script>
+    <script>
+        new ClipboardJS('.btn');
+    </script>
 
 @endsection

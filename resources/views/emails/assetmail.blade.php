@@ -37,7 +37,7 @@
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                             Dear <strong style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                            {{ $deposit->user->name }}.</strong>
+                                                Name.</strong>
                                         </td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -50,11 +50,15 @@
                                             <table class="table table-striped">
                                                 <tr>
                                                     <th>Asset</th>
-                                                    <td>{{ $deposit->crypto_asset->name }}</td>
+                                                    <td>Bitcoin</td>
                                                 </tr>
                                                 <tr>
                                                     <th>Amount</th>
-                                                    <td>{{ $deposit->amount }}</td>
+                                                    <td>400</td>
+                                                </tr>
+                                                <tr>
+                                                    <th>Date</th>
+                                                    <td>400</td>
                                                 </tr>
                                             </table>
                                         </td>
@@ -87,9 +91,6 @@
         </tbody>
     </table>
 </div>
-
-
-<!-- Optional JavaScript; choose one of the two! -->
 
 <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>

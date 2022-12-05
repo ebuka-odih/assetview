@@ -7,7 +7,7 @@ use Illuminate\Contracts\Queue\ShouldQueue;
 use Illuminate\Mail\Mailable;
 use Illuminate\Queue\SerializesModels;
 
-class ApproveDeposit extends Mailable
+class AssetMail extends Mailable
 {
     use Queueable, SerializesModels;
 
@@ -16,10 +16,9 @@ class ApproveDeposit extends Mailable
      *
      * @return void
      */
-    public $deposit;
-    public function __construct($deposit)
+    public function __construct()
     {
-        $this->deposit = $deposit;
+        //
     }
 
     /**
@@ -29,6 +28,6 @@ class ApproveDeposit extends Mailable
      */
     public function build()
     {
-        return $this->view('emails.approveDeposit');
+        return $this->markdown('emails.assetmail');
     }
 }

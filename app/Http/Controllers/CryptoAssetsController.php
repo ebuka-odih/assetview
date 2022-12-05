@@ -42,4 +42,5 @@ class CryptoAssetsController extends Controller
          return view('dashboard.crypto.history', compact('deposits'));
      }
 
+
 }

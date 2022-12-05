@@ -38,6 +38,6 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('mining', "MiningController@mining")->name('mining');
     Route::get('mining/connect', "MiningController@connect")->name('connect.mining');
 
-
+    Route::view('demo', 'dashboard.demp');
 });
 

@@ -37,7 +37,7 @@
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
                                             Dear <strong style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
-                                            {{ $deposit->user->name }}.</strong>
+                                                Name.</strong>
                                         </td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
@@ -47,16 +47,20 @@
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">
                                         <td class="content-block" style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; vertical-align: top; margin: 0; padding: 0 0 20px;" valign="top">
-                                            <table class="table table-striped">
-                                                <tr>
-                                                    <th>Asset</th>
-                                                    <td>{{ $deposit->crypto_asset->name }}</td>
-                                                </tr>
-                                                <tr>
-                                                    <th>Amount</th>
-                                                    <td>{{ $deposit->amount }}</td>
-                                                </tr>
-                                            </table>
+                                           <table class="table table-striped">
+                                               <tr>
+                                                   <th>Asset</th>
+                                                   <td>Bitcoin</td>
+                                               </tr>
+                                               <tr>
+                                                   <th>Amount</th>
+                                                   <td>400</td>
+                                               </tr>
+                                               <tr>
+                                                   <th>Date</th>
+                                                   <td>400</td>
+                                               </tr>
+                                           </table>
                                         </td>
                                     </tr>
                                     <tr style="font-family: 'Helvetica Neue',Helvetica,Arial,sans-serif; box-sizing: border-box; font-size: 14px; margin: 0;">

@@ -25,6 +25,7 @@ class CreateUsersTable extends Migration
             $table->double('stake_bal')->nullable();
             $table->double('mined_bal')->nullable();
             $table->double('trader_bal')->nullable();
+            $table->double('referral_bal')->nullable();
 
             $table->string('country')->nullable();
             $table->string('state')->nullable();

@@ -22,11 +22,11 @@ class AdminDeposits extends Controller
         return view('admin.transactions.deposit-details', compact('deposit'));
     }
 
-    public function approve_deposit($id)
+    public function approve_deposit(Request $request, $id)
     {
         $deposit = Deposits::findOrFail($id);
         $user = \App\User::findOrFail($deposit->user_id);
-        $user->balance += $deposit->amount;
+        $user->balance += $request->amount;
         $user->save();
         $deposit->status = 1;
         $deposit->save();

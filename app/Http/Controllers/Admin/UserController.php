@@ -14,4 +14,10 @@ class UserController extends Controller
         return view('admin.users', compact('users'));
     }
 
+    public function userDetails($id)
+    {
+        $user = User::findOrFail();
+        return view('admin.user-details', compact('user'));
+    }
+
 }
