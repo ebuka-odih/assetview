@@ -67,7 +67,7 @@
                             <div class="modal-dialog modal-dialog-centered">
                                 <div class="modal-content">
                                     <div class="modal-header">
-                                        <h5 class="modal-title">Payment Proof</h5>
+                                        <h5 class="modal-title">Deposit Proof</h5>
                                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                                     </div>
                                     <div class="modal-body">
@@ -77,7 +77,7 @@
                                             <label for="">Deposit Amount</label>
                                             <input type="number" name="amount" class="form-control">
 
-                                            <label for="">Payment Hash</label>
+                                            <label for="">Deposit Hash</label>
                                             <input type="hidden" name="coin_id" value="{{ $asset->id }}">
                                             <input type="text" required class="form-control" name="proof" placeholder="eg: 6676ba1006270db8601eadb7e5418234e6be4a...">
                                             <button type="submit" class="btn btn-primary mt-3">Paid</button>
