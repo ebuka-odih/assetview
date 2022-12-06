@@ -15,7 +15,7 @@
     <link href="{{ asset('assets/css/icons.min.css') }}" rel="stylesheet" type="text/css" />
     <!-- App Css-->
     <link href="{{ asset('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
-    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ba3b450c-fc6b-4063-9839-b0530d3f2c0f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
+
 </head>
 
 <body data-sidebar="dark" data-layout-mode="light">
@@ -193,6 +193,6 @@
 <script src="{{ asset('assets/js/pages/crypto-dashboard.init.js') }}"></script>
 
 <script src="{{ asset('assets/js/app.js') }}"></script>
-
+<script src="//code.tidio.co/x1bhyvj5fwdfbx1ckvqprmgyugakikqi.js" async></script>
 </body>
 </html>
