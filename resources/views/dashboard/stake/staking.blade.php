@@ -48,10 +48,10 @@
                                 <div class="d-flex align-items-center mb-3">
                                     <div class="avatar-xs me-3">
                                         <span class="avatar-title rounded-circle bg-warning bg-soft text-warning font-size-18">
-                                            <i class="mdi mdi-bitcoin"></i>
+                                             <img style="height: 50px; width: 50px" src="{{ asset('crypto/'.$item->icon) }}" alt="">
                                         </span>
                                     </div>
-                                    <h5 class="font-size-14 mb-0">Bitcoin </h5>
+                                    <h5 class="font-size-14 mb-0">{{ $item->name }} </h5>
                                 </div>
 
                                 <div class="row">
