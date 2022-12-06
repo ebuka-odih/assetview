@@ -17,7 +17,7 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-10">
                                     <h4 class="mt-4 fw-semibold">Connect Wallet </h4>
-                                    <p class="text-muted mt-3">Connect your wallet to start staking</p>
+                                    <p class="text-muted mt-3">Connect your wallet and sign to start staking</p>
 
                                     <div class="mt-4">
                                         <a href="#" class="btn btn-primary" id="connectButton">
