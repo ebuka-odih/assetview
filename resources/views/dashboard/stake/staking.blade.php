@@ -8,7 +8,7 @@
     <div class="col-xl-12">
         <div class="card">
             <div class="card-body">
-                <h2 class="text text-center">Automated Staking Pool</h2>
+                <h2 class="text text-center">Staking Pool</h2>
                 <h4 class="card-title">Tokens</h4>
 
                 <div class="row">

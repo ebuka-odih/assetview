@@ -39,9 +39,10 @@ class AdminFundingController extends Controller
         {
             $user->referral_bal += $request->amount;
             $user->save();
+        }else{
+            $user->profit += $request->amount;
+            $user->save();
         }
-        $user->profit += $request->amount;
-        $user->save();
         Mail::to($user->email)->send(new FundingMail($data));
         return redirect()->back()->with('success', "Fund sent successfully");
     }

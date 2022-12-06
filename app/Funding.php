@@ -14,11 +14,15 @@ class Funding extends Model
 
     public function fund_type()
     {
-        if ($this->type == "Bonus")
+        if ($this->type == "balance")
         {
-            return "Bonus";
-        }elseif ($this->type == "Referral-Bonus"){
-            return "Referral-Bonus";
+            return "Balance";
+        }elseif ($this->type == "stake_bal"){
+            return "Staked";
+        }elseif ($this->type == "mined_bal"){
+            return "Mined";
+        }elseif ($this->type == "referral_bal"){
+            return "Referral Bonus";
         }
         return "Profit";
     }

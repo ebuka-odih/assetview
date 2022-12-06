@@ -16,9 +16,10 @@ class FundingMail extends Mailable
      *
      * @return void
      */
-    public function __construct()
+    public $data;
+    public function __construct($data)
     {
-        //
+       return $this->data = $data;
     }
 
     /**
@@ -28,6 +29,6 @@ class FundingMail extends Mailable
      */
     public function build()
     {
-        return $this->markdown('emails.fundingMail');
+        return $this->view('emails.fundingMail');
     }
 }
