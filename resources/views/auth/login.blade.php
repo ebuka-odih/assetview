@@ -56,7 +56,7 @@
                         </div>
                         <div class="p-2">
                             <form class="form-horizontal" method="POST" action="{{ route('login') }}">
-                                @csrf
+                                {{ csrf_field() }}
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>

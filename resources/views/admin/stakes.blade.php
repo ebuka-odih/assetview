@@ -126,7 +126,7 @@
                                                 <i class="fa fa-pencil-alt"></i>
                                             </button>
 
-                                            <form method="POST" action="{!! route('admin.asset.destroy', $item->id) !!}" accept-charset="UTF-8">
+                                            <form method="POST" action="{!! route('admin.delete', $item->id) !!}" accept-charset="UTF-8">
                                                 <input name="_method" value="DELETE" type="hidden">
                                                 {{ csrf_field() }}
                                                 <div class="btn-group btn-group-xs pull-right" role="group">

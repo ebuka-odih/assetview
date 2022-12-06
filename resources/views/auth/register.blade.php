@@ -52,7 +52,7 @@
                         </div>
                         <div class="p-2">
                             <form class="needs-validation" method="POST" action="{{ route('register') }}">
-                                @csrf
+                                {{ csrf_field() }}
                                 @if ($errors->any())
                                     <div class="alert alert-danger">
                                         <ul>

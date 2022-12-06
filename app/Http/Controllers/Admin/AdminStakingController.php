@@ -43,4 +43,11 @@ class AdminStakingController extends Controller
         return redirect()->back();
 
     }
+
+    public function delete($id)
+    {
+        $stake = Staking::findOrFail($id);
+        $stake->delete();
+        return redirect()->back();
+    }
 }

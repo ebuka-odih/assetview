@@ -11,6 +11,7 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'admin', 'as' =>
 
     Route::get('staking', "Admin\AdminStakingController@stakes")->name('staking');
     Route::post('staking', "Admin\AdminStakingController@storeStake")->name('storeStake');
+    Route::delete('delete/staking/{id}', "Admin\AdminStakingController@delete")->name('delete');
 
     Route::resource('asset', "Admin\AdminCryptoAssetsController");
 
