@@ -52,12 +52,16 @@
                                     </div>
                                 </div>
                                 <div class="row">
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-4">
                                         <label  >Asset Interest</label>
                                         <input type="text" class="form-control"  name="interest" >
                                     </div>
+                                    <div class="col-lg-4">
+                                        <label  >Asset Wallet</label>
+                                        <input type="text" class="form-control"  name="value" >
+                                    </div>
 
-                                    <div class="col-lg-6">
+                                    <div class="col-lg-4">
                                         <label >Duration</label>
                                         <input type="text" class="form-control" name="duration" >
                                     </div>
@@ -100,6 +104,7 @@
                                 <th >Icon</th>
                                 <th>Interest</th>
                                 <th>Duration</th>
+                                <th>Wallet Address</th>
                                 <th class="text-center" >Actions</th>
                             </tr>
                             </thead>
@@ -112,8 +117,9 @@
                                     <td class="fw-semibold">
                                         <img style="height: 50px; width: 50px" src="{{ asset('crypto/'.$item->icon) }}" alt="">
                                     </td>
-                                    <td>{{ $item->interest }}</td>
-                                    <td>{{ $item->duration }}</td>
+                                    <td>{{ $item->interest }}%</td>
+                                    <td>{{ $item->duration }} Day(s)</td>
+                                    <td>{{ $item->value }} </td>
                                     <td class="text-center">
                                         <div class="btn-group">
                                             <button type="button" class="btn btn-sm btn-alt-secondary js-bs-tooltip-enabled" data-bs-toggle="tooltip" title="" data-bs-original-title="Edit">

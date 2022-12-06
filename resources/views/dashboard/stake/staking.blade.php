@@ -4,44 +4,6 @@
         <div class="container-fluid">
 
         <div class="row">
-        <div class="col-xl-8">
-        <div class="card">
-            <div class="card-body border-bottom">
-
-                <div>
-                    <div class="mb-4 me-3">
-                        <i class="mdi mdi-account-circle text-primary h1"></i>
-                    </div>
-
-                    <div>
-                        <h5 class="">{{ auth()->user()->name }}</h5>
-                        <p class="text-muted mb-1">{{ auth()->user()->email }}</p>
-                    </div>
-                </div>
-            </div>
-            <div class="card-body border-bottom">
-                <div>
-                    <div class="row">
-                        <div class="col-sm-6">
-                            <div>
-                                <p class="text-muted mb-2">Staked Balance</p>
-                                <h5>$ 0.00</h5>
-                            </div>
-                        </div>
-                        <div class="col-sm-6">
-                            <div class="text-sm-end mt-4 mt-sm-0">
-                                <p class="text-muted mb-2">Since last month</p>
-                                <h5>+ $ 0.00   <span class="badge bg-success ms-1 align-bottom">+ 0.00 %</span></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-
-        </div>
-
-    </div>
 
     <div class="col-xl-12">
         <div class="card">
@@ -104,7 +66,7 @@
 
                                     <div class="col-lg-6 align-self-end">
                                         <div class="float-end mt-3">
-                                            <a href="{{ route('user.connect') }}" class="btn btn-primary">Stake Now</a>
+                                            <a href="{{ route('user.staking.payment', $item->id) }}" class="btn btn-primary">Stake Now</a>
                                         </div>
                                     </div>
                                 </div>
