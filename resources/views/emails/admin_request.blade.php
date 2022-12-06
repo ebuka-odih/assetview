@@ -1,11 +1,10 @@
 @component('mail::message')
-# Introduction
+# Dear Admin
 
-The body of your message.
+A deposit of $ @convert($data['withdraw']->amount) has been made
 
-@component('mail::button', ['url' => ''])
-Button Text
-@endcomponent
+<p>User: {{ $data->user->name }}</p><br>
+<p>Amount: $ @convert($data['withdraw']->amount)</p>
 
 Thanks,<br>
 {{ config('app.name') }}
