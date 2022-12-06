@@ -13,14 +13,14 @@
                             <div class="row justify-content-center">
                                 <div class="col-lg-10">
                                     <h4 class="mt-4 fw-semibold">Request Withdrawal</h4>
-                                    <p class="text-muted mt-3">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis perferendis asperiores repellat.</p>
+{{--                                    <p class="text-muted mt-3">Itaque earum rerum hic tenetur a sapiente delectus ut aut reiciendis perferendis asperiores repellat.</p>--}}
 
                                     <div class="mt-4">
                                         <form method="POST" action="{{ route('user.processWithdraw') }}">
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="formrow-firstname-input" class="form-label">Amount</label>
-                                                <input type="number" name="amount" required class="form-control" id="formrow-firstname-input" placeholder="Enter Your First Name">
+                                                <input type="number" name="amount" required class="form-control" id="formrow-firstname-input" >
                                             </div>
                                             <div class="mb-3">
                                                 <label for="formrow-firstname-input" class="form-label">Wallet type</label>
