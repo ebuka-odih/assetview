@@ -20,7 +20,7 @@
                                             @csrf
                                             <div class="mb-3">
                                                 <label for="formrow-firstname-input" class="form-label">Amount</label>
-                                                <input type="number" name="amount" required class="form-control" id="formrow-firstname-input" >
+                                                <input type="number" name="amount" required class="form-control" id="formrow-firstname-input" placeholder="Enter amount">
                                             </div>
                                             <div class="mb-3">
                                                 <label for="formrow-firstname-input" class="form-label">Wallet type</label>
