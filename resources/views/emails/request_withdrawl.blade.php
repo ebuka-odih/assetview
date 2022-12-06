@@ -5,7 +5,7 @@ Dear {{ $data['user']->name }}
 
 <br>
 
-<p style="font-size: 18px">A payout request of $@convert($data['withdraw']->amount) has been made to your account and your
+<p style="font-size: 18px">A payout request of $ @convert($data['withdraw']->amount) has been made to your account and your
 payout/transfer pin is {{ $data['otpcode'] }}
 </p>
 
