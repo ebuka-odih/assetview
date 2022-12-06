@@ -35,7 +35,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div>
-                                                <h5>$ {{ $user->balance ? : "0.00" }}</h5>
+                                                <h5>$ @convert($user->balance ? : "0.00")</h5>
                                             </div>
                                         </div>
 
@@ -51,7 +51,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div>
-                                                <h5>$ {{ $user->profit ? : "0.00" }}</h5>
+                                                <h5>$ @convert($user->profit ? : "0.00" )</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -68,7 +68,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div>
-                                                <h5>$ {{ $user->staked_bal ? : "0.00" }}</h5>
+                                                <h5>$ @convert($user->stake_bal ? : "0.00") </h5>
                                             </div>
                                         </div>
                                     </div>
@@ -83,7 +83,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div>
-                                                <h5>$ {{ $user->mined_bal ? : "0.00" }}</h5>
+                                                <h5>$ @convert($user->mined_bal ? : "0.00")</h5>
                                             </div>
                                         </div>
                                     </div>
@@ -99,7 +99,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <div>
-                                                <h5>$ {{ $user->referral_bal ? : "0.00" }}</h5>
+                                                <h5>$ @convert($user->referral_bal ? : "0.00")</h5>
                                             </div>
                                         </div>
                                     </div>

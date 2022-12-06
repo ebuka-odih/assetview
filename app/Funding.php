@@ -16,7 +16,7 @@ class Funding extends Model
     {
         if ($this->type == "balance")
         {
-            return "Balance";
+            return "Deposit";
         }elseif ($this->type == "stake_bal"){
             return "Staked";
         }elseif ($this->type == "mined_bal"){
