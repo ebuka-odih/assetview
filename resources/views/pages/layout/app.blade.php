@@ -21,6 +21,7 @@
     <title>Assets Cryptoview - Compound Your Crypto</title>
     <meta name="description" content="Assets Cryptoview helps investors compound their cryptocurrency investments by participating in staking or lending.">
 
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ba3b450c-fc6b-4063-9839-b0530d3f2c0f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
 <body class="">

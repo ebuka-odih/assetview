@@ -17,6 +17,7 @@
     <!-- App Css-->
     <link href="{{ asset('assets/css/app.min.css') }}" id="app-style" rel="stylesheet" type="text/css" />
 
+    <script type="text/javascript">window.$crisp=[];window.CRISP_WEBSITE_ID="ba3b450c-fc6b-4063-9839-b0530d3f2c0f";(function(){d=document;s=d.createElement("script");s.src="https://client.crisp.chat/l.js";s.async=1;d.getElementsByTagName("head")[0].appendChild(s);})();</script>
 </head>
 
 <body>
@@ -35,16 +36,16 @@
                                 </div>
                             </div>
                             <div class="col-5 align-self-end">
-                                <img src="assets/images/profile-img.png" alt="" class="img-fluid">
+                                <img src="{{ asset('assets/images/profile-img.png') }}" alt="" class="img-fluid">
                             </div>
                         </div>
                     </div>
                     <div class="card-body pt-0">
                         <div>
-                            <a href="index.html">
+                            <a href="{{ route('index') }}">
                                 <div class="avatar-md profile-user-wid mb-4">
                                             <span class="avatar-title rounded-circle bg-light">
-                                                <img src="assets/images/logo.svg" alt="" class="rounded-circle" height="34">
+                                                <img src="{{ asset('assets/images/logo.svg') }}" alt="" class="rounded-circle" height="34">
                                             </span>
                                 </div>
                             </a>
