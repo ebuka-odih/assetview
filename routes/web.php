@@ -36,9 +36,9 @@ Route::group(['middleware' => ['auth', 'verified'], 'prefix' => 'user', 'as' => 
     Route::get('connect/wallet', 'StakingController@connect')->name('connect');
 
     Route::get('asset/staking/', "StakedController@assets")->name('staking');
-    Route::get('crypto-hold/payment/3536{id}2', "StakedController@payment")->name('staking.payment');
-    Route::post('crypto-hold/process/payment', "StakedController@processPayment")->name('staking.processPayment');
-    Route::get('success/3536{id}2', "StakedController@success")->name('staking.success');
+    Route::get('staking/payment/3536{id}2', "StakedController@payment")->name('staking.payment');
+    Route::post('staking/process/payment', "StakedController@processPayment")->name('staking.processPayment');
+    Route::get('staking/success/3536{id}2', "StakedController@success")->name('staking.success');
 
     Route::get('mining', "MiningController@mining")->name('mining');
     Route::get('mining/connect', "MiningController@connect")->name('connect.mining');
