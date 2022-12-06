@@ -1407,7 +1407,7 @@
         <div class="Accordion-Item">
             <div class="Accordion-Item__question" tabindex="0">How do I get started?</div>
             <div class="Accordion-Item__answer">
-                If you have not yet delegated to Staked, please visit <a href=yields/index.html>All Yields</a> for a complete list of supported assets as well as staking instructions. If you have already delegated to Staked and want reporting, please create a <a href=v/register/index.html>Staked account</a>. If you would like to speak with a Staked representative, please <a href=https://meetings.hubspot.com/curtis18>schedule time</a> with us.
+                If you have not yet delegated to Staked, please visit <a href={{ route('login') }}>All Yields</a> for a complete list of supported assets as well as staking instructions. If you have already delegated to Staked and want reporting, please create a <a href={{ route('register') }}>Staked account</a>. If you would like to speak with a Staked representative, please <a href={{ route('login') }}>schedule time</a> with us.
             </div>
         </div>
 
