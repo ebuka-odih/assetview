@@ -27,7 +27,7 @@
                                 <div class="col-lg-6">
                                     <div class="text-muted mt-3">
                                         <p>Annual Yield</p>
-                                        <h4>121 %</h4>
+                                        <h4>15 %</h4>
                                         <p>Duration</p>
                                         <h4>30 Days</h4>
                                     </div>
