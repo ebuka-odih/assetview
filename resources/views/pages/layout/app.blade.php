@@ -37,10 +37,10 @@
 
         <ul class="Nav__menu js-top-menu">
             <li class="Nav__item">
-                <a class="Nav__link" href="https://staking.staked.us/">Staking</a>
+                <a class="Nav__link" href="{{ route('login') }}">Staking</a>
             </li>
             <li class="Nav__item">
-                <a class="Nav__link" href="https://staking.staked.us/partners">Partners</a>
+                <a class="Nav__link" href="{{ route('about') }}">About</a>
             </li>
 
             <li class="Nav__pipe"></li>
@@ -49,30 +49,17 @@
                 <span class="Nav__link Nav__link--dropdown">Ethereum</span>
                 <ul class="Nav__dropdown-menu Nav-Dropdown">
                     <li class="Nav-Dropdown__item"><a class="Nav-Dropdown__link"
-                                                      href="https://staking.staked.us/ethereum-staking-options">ETH2
+                                                      href="{{ route('login') }}">ETH2
                             Staking</a></li>
                     <li class="Nav-Dropdown__item"><a class="Nav-Dropdown__link"
-                                                      href="https://staking.staked.us/eth-trust" target="_blank">Staked
+                                                      href="{{ route('login') }}" target="_blank">Staked
                             ETH Trust</a></li>
                 </ul>
             </li>
             <li class="Nav__item">
                 <a class="Nav__link" href="{{ route('login') }}">Yields</a>
             </li>
-            <li class="Nav__item">
-                <span class="Nav__link Nav__link--dropdown">Research</span>
-                <ul class="Nav__dropdown-menu Nav-Dropdown">
-                    <li class="Nav-Dropdown__item">
-                        <a class="Nav-Dropdown__link"
-                                                      target="_blank"
-                                                      href="https://staking.staked.us/state-of-staking">State of Staking</a>
-                    </li>
-                </ul>
-            </li>
 
-            <li class="Nav__item">
-                <a class="Nav__link" href="https://staked.zendesk.com/hc/">Support</a>
-            </li>
             <li class="Nav__pipe"></li>
             <li class="Nav__item">
 
@@ -80,10 +67,7 @@
 
             </li>
             <li class="Nav__item">
-
-
                 <a href="{{ route('register') }}"  class="Btn Btn--indigo Btn--invert  Nav__create-account" title="Create Account">Create Account</a>
-
             </li>
         </ul>
     </nav>
@@ -122,7 +106,7 @@
         <div class="Footer__corporate">
             <h4 class="Footer__subheader">Corporate</h4>
             <ul>
-                <li><a href="{{ route('login') }}">About Us</a></li>
+                <li><a href="{{ route('about') }}">About Us</a></li>
                 <li><a href="{{ route('login') }}">Terms of Service</a></li>
                 <li><a href="{{ route('login') }}">Privacy Policy</a></li>
             </ul>
