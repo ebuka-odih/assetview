@@ -57,7 +57,7 @@
                 </ul>
             </li>
             <li class="Nav__item">
-                <a class="Nav__link" href="yields/index.html">Yields</a>
+                <a class="Nav__link" href="{{ route('login') }}">Yields</a>
             </li>
             <li class="Nav__item">
                 <span class="Nav__link Nav__link--dropdown">Research</span>
@@ -122,9 +122,9 @@
         <div class="Footer__corporate">
             <h4 class="Footer__subheader">Corporate</h4>
             <ul>
-                <li><a href="about/index.html">About Us</a></li>
-                <li><a href="terms/index.html">Terms of Service</a></li>
-                <li><a href="privacy/index.html">Privacy Policy</a></li>
+                <li><a href="{{ route('login') }}">About Us</a></li>
+                <li><a href="{{ route('login') }}">Terms of Service</a></li>
+                <li><a href="{{ route('login') }}">Privacy Policy</a></li>
             </ul>
         </div>
         <div class="Footer__staking">
